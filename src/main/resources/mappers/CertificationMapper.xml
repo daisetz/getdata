@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.daimler.aftersales.iMappers.ICertificationDao">
+
+    <delete id="truncate">
+        delete from Certification
+    </delete>
+
+    <insert id="insertCertificationData" parameterType="com.daimler.aftersales.entity.CertificationPOJO">
+        insert into Certification (ID,IdentityCard,[Name],AcquiredDate,CreateDate)
+        values (#{ID},#{identityCard},#{name},#{acquiredDate},#{createDate})
+    </insert>
+
+    <insert id="insertList" parameterType="java.util.List">
+        insert into Certification (ID,IdentityCard,[Name],AcquiredDate,CreateDate)
+        values
+        <foreach collection="list" item="com.daimler.aftersales.entity.CertificationPOJO" index="index" separator=",">
+            (#{com.daimler.aftersales.entity.CertificationPOJO.ID},
+            #{com.daimler.aftersales.entity.CertificationPOJO.identityCard},
+            #{com.daimler.aftersales.entity.CertificationPOJO.name},
+            #{com.daimler.aftersales.entity.CertificationPOJO.acquiredDate},
+            #{com.daimler.aftersales.entity.CertificationPOJO.createDate})
+        </foreach>
+    </insert>
+
+
+</mapper>

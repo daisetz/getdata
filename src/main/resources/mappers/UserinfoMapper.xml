@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.daimler.aftersales.iMappers.UserinfoMapper">
+  <resultMap id="BaseResultMap" type="com.daimler.aftersales.entity.Userinfo">
+    <id column="UserID" jdbcType="INTEGER" property="userid" />
+    <result column="CardType" jdbcType="INTEGER" property="cardtype" />
+    <result column="CardNumber" jdbcType="NVARCHAR" property="cardnumber" />
+    <result column="DrivingLicense" jdbcType="NVARCHAR" property="drivinglicense" />
+    <result column="FamilyNameCn" jdbcType="NVARCHAR" property="familynamecn" />
+    <result column="GivenNameCn" jdbcType="NVARCHAR" property="givennamecn" />
+    <result column="FamilyNameEn" jdbcType="NVARCHAR" property="familynameen" />
+    <result column="GivenNameEn" jdbcType="NVARCHAR" property="givennameen" />
+    <result column="Birthday" jdbcType="TIMESTAMP" property="birthday" />
+    <result column="Gender" jdbcType="INTEGER" property="gender" />
+    <result column="QualificationID" jdbcType="INTEGER" property="qualificationid" />
+    <result column="CertificationID" jdbcType="INTEGER" property="certificationid" />
+    <result column="InputDate" jdbcType="TIMESTAMP" property="inputdate" />
+    <result column="Status" jdbcType="INTEGER" property="status" />
+    <result column="Version" jdbcType="INTEGER" property="version" />
+    <result column="Picture" jdbcType="NVARCHAR" property="picture" />
+    <result column="LastEmailDateForStaffInfoChangingSubmit" jdbcType="TIMESTAMP" property="lastemaildateforstaffinfochangingsubmit" />
+    <result column="ResumeProveFilePath" jdbcType="NVARCHAR" property="resumeprovefilepath" />
+  </resultMap>
+  <delete id="truncate">
+    DELETE  from UserInfo
+  </delete>
+  <insert id="insertList" parameterType="java.util.List">
+    insert into UserInfo (UserID, CardType, CardNumber,
+    DrivingLicense, FamilyNameCn, GivenNameCn,
+    FamilyNameEn, GivenNameEn, Birthday,
+    Gender, QualificationID, CertificationID,
+    InputDate, Status, Version,
+    Picture, LastEmailDateForStaffInfoChangingSubmit,
+    ResumeProveFilePath)
+    values
+    <foreach collection="list" item="com.daimler.aftersales.entity.Dealeraccount" index="index" separator=",">
+    (#{com.daimler.aftersales.entity.Dealeraccount.userid,jdbcType=INTEGER},
+    #{com.daimler.aftersales.entity.Dealeraccount.cardtype,jdbcType=INTEGER},
+    #{com.daimler.aftersales.entity.Dealeraccount.cardnumber,jdbcType=NVARCHAR},
+    #{com.daimler.aftersales.entity.Dealeraccount.drivinglicense,jdbcType=NVARCHAR},
+    #{com.daimler.aftersales.entity.Dealeraccount.familynamecn,jdbcType=NVARCHAR},
+    #{com.daimler.aftersales.entity.Dealeraccount.givennamecn,jdbcType=NVARCHAR},
+    #{com.daimler.aftersales.entity.Dealeraccount.familynameen,jdbcType=NVARCHAR},
+    #{com.daimler.aftersales.entity.Dealeraccount.givennameen,jdbcType=NVARCHAR},
+    #{com.daimler.aftersales.entity.Dealeraccount.birthday,jdbcType=TIMESTAMP},
+    #{com.daimler.aftersales.entity.Dealeraccount.gender,jdbcType=INTEGER},
+    #{com.daimler.aftersales.entity.Dealeraccount.qualificationid,jdbcType=INTEGER},
+    #{com.daimler.aftersales.entity.Dealeraccount.certificationid,jdbcType=INTEGER},
+    #{com.daimler.aftersales.entity.Dealeraccount.inputdate,jdbcType=TIMESTAMP},
+    #{com.daimler.aftersales.entity.Dealeraccount.status,jdbcType=INTEGER},
+    #{com.daimler.aftersales.entity.Dealeraccount.version,jdbcType=INTEGER},
+    #{com.daimler.aftersales.entity.Dealeraccount.picture,jdbcType=NVARCHAR},
+    #{com.daimler.aftersales.entity.Dealeraccount.lastemaildateforstaffinfochangingsubmit,jdbcType=TIMESTAMP},
+    #{com.daimler.aftersales.entity.Dealeraccount.resumeprovefilepath,jdbcType=NVARCHAR})
+  </foreach>
+  </insert>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    UserID, CardType, CardNumber, DrivingLicense, FamilyNameCn, GivenNameCn, FamilyNameEn, 
+    GivenNameEn, Birthday, Gender, QualificationID, CertificationID, InputDate, Status, 
+    Version, Picture, LastEmailDateForStaffInfoChangingSubmit, ResumeProveFilePath
+  </sql>
+  <select id="selectByExample" parameterType="com.daimler.aftersales.entity.UserinfoExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from UserInfo
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from UserInfo
+    where UserID = #{userid,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from UserInfo
+    where UserID = #{userid,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.daimler.aftersales.entity.UserinfoExample">
+    delete from UserInfo
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.daimler.aftersales.entity.Userinfo">
+    insert into UserInfo (UserID, CardType, CardNumber, 
+      DrivingLicense, FamilyNameCn, GivenNameCn, 
+      FamilyNameEn, GivenNameEn, Birthday, 
+      Gender, QualificationID, CertificationID, 
+      InputDate, Status, Version, 
+      Picture, LastEmailDateForStaffInfoChangingSubmit, 
+      ResumeProveFilePath)
+    values (#{userid,jdbcType=INTEGER}, #{cardtype,jdbcType=INTEGER}, #{cardnumber,jdbcType=NVARCHAR}, 
+      #{drivinglicense,jdbcType=NVARCHAR}, #{familynamecn,jdbcType=NVARCHAR}, #{givennamecn,jdbcType=NVARCHAR}, 
+      #{familynameen,jdbcType=NVARCHAR}, #{givennameen,jdbcType=NVARCHAR}, #{birthday,jdbcType=TIMESTAMP}, 
+      #{gender,jdbcType=INTEGER}, #{qualificationid,jdbcType=INTEGER}, #{certificationid,jdbcType=INTEGER}, 
+      #{inputdate,jdbcType=TIMESTAMP}, #{status,jdbcType=INTEGER}, #{version,jdbcType=INTEGER}, 
+      #{picture,jdbcType=NVARCHAR}, #{lastemaildateforstaffinfochangingsubmit,jdbcType=TIMESTAMP}, 
+      #{resumeprovefilepath,jdbcType=NVARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.daimler.aftersales.entity.Userinfo">
+    insert into UserInfo
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="userid != null">
+        UserID,
+      </if>
+      <if test="cardtype != null">
+        CardType,
+      </if>
+      <if test="cardnumber != null">
+        CardNumber,
+      </if>
+      <if test="drivinglicense != null">
+        DrivingLicense,
+      </if>
+      <if test="familynamecn != null">
+        FamilyNameCn,
+      </if>
+      <if test="givennamecn != null">
+        GivenNameCn,
+      </if>
+      <if test="familynameen != null">
+        FamilyNameEn,
+      </if>
+      <if test="givennameen != null">
+        GivenNameEn,
+      </if>
+      <if test="birthday != null">
+        Birthday,
+      </if>
+      <if test="gender != null">
+        Gender,
+      </if>
+      <if test="qualificationid != null">
+        QualificationID,
+      </if>
+      <if test="certificationid != null">
+        CertificationID,
+      </if>
+      <if test="inputdate != null">
+        InputDate,
+      </if>
+      <if test="status != null">
+        Status,
+      </if>
+      <if test="version != null">
+        Version,
+      </if>
+      <if test="picture != null">
+        Picture,
+      </if>
+      <if test="lastemaildateforstaffinfochangingsubmit != null">
+        LastEmailDateForStaffInfoChangingSubmit,
+      </if>
+      <if test="resumeprovefilepath != null">
+        ResumeProveFilePath,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="userid != null">
+        #{userid,jdbcType=INTEGER},
+      </if>
+      <if test="cardtype != null">
+        #{cardtype,jdbcType=INTEGER},
+      </if>
+      <if test="cardnumber != null">
+        #{cardnumber,jdbcType=NVARCHAR},
+      </if>
+      <if test="drivinglicense != null">
+        #{drivinglicense,jdbcType=NVARCHAR},
+      </if>
+      <if test="familynamecn != null">
+        #{familynamecn,jdbcType=NVARCHAR},
+      </if>
+      <if test="givennamecn != null">
+        #{givennamecn,jdbcType=NVARCHAR},
+      </if>
+      <if test="familynameen != null">
+        #{familynameen,jdbcType=NVARCHAR},
+      </if>
+      <if test="givennameen != null">
+        #{givennameen,jdbcType=NVARCHAR},
+      </if>
+      <if test="birthday != null">
+        #{birthday,jdbcType=TIMESTAMP},
+      </if>
+      <if test="gender != null">
+        #{gender,jdbcType=INTEGER},
+      </if>
+      <if test="qualificationid != null">
+        #{qualificationid,jdbcType=INTEGER},
+      </if>
+      <if test="certificationid != null">
+        #{certificationid,jdbcType=INTEGER},
+      </if>
+      <if test="inputdate != null">
+        #{inputdate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="status != null">
+        #{status,jdbcType=INTEGER},
+      </if>
+      <if test="version != null">
+        #{version,jdbcType=INTEGER},
+      </if>
+      <if test="picture != null">
+        #{picture,jdbcType=NVARCHAR},
+      </if>
+      <if test="lastemaildateforstaffinfochangingsubmit != null">
+        #{lastemaildateforstaffinfochangingsubmit,jdbcType=TIMESTAMP},
+      </if>
+      <if test="resumeprovefilepath != null">
+        #{resumeprovefilepath,jdbcType=NVARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.daimler.aftersales.entity.UserinfoExample" resultType="java.lang.Integer">
+    select count(*) from UserInfo
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update UserInfo
+    <set>
+      <if test="record.userid != null">
+        UserID = #{record.userid,jdbcType=INTEGER},
+      </if>
+      <if test="record.cardtype != null">
+        CardType = #{record.cardtype,jdbcType=INTEGER},
+      </if>
+      <if test="record.cardnumber != null">
+        CardNumber = #{record.cardnumber,jdbcType=NVARCHAR},
+      </if>
+      <if test="record.drivinglicense != null">
+        DrivingLicense = #{record.drivinglicense,jdbcType=NVARCHAR},
+      </if>
+      <if test="record.familynamecn != null">
+        FamilyNameCn = #{record.familynamecn,jdbcType=NVARCHAR},
+      </if>
+      <if test="record.givennamecn != null">
+        GivenNameCn = #{record.givennamecn,jdbcType=NVARCHAR},
+      </if>
+      <if test="record.familynameen != null">
+        FamilyNameEn = #{record.familynameen,jdbcType=NVARCHAR},
+      </if>
+      <if test="record.givennameen != null">
+        GivenNameEn = #{record.givennameen,jdbcType=NVARCHAR},
+      </if>
+      <if test="record.birthday != null">
+        Birthday = #{record.birthday,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.gender != null">
+        Gender = #{record.gender,jdbcType=INTEGER},
+      </if>
+      <if test="record.qualificationid != null">
+        QualificationID = #{record.qualificationid,jdbcType=INTEGER},
+      </if>
+      <if test="record.certificationid != null">
+        CertificationID = #{record.certificationid,jdbcType=INTEGER},
+      </if>
+      <if test="record.inputdate != null">
+        InputDate = #{record.inputdate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.status != null">
+        Status = #{record.status,jdbcType=INTEGER},
+      </if>
+      <if test="record.version != null">
+        Version = #{record.version,jdbcType=INTEGER},
+      </if>
+      <if test="record.picture != null">
+        Picture = #{record.picture,jdbcType=NVARCHAR},
+      </if>
+      <if test="record.lastemaildateforstaffinfochangingsubmit != null">
+        LastEmailDateForStaffInfoChangingSubmit = #{record.lastemaildateforstaffinfochangingsubmit,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.resumeprovefilepath != null">
+        ResumeProveFilePath = #{record.resumeprovefilepath,jdbcType=NVARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update UserInfo
+    set UserID = #{record.userid,jdbcType=INTEGER},
+      CardType = #{record.cardtype,jdbcType=INTEGER},
+      CardNumber = #{record.cardnumber,jdbcType=NVARCHAR},
+      DrivingLicense = #{record.drivinglicense,jdbcType=NVARCHAR},
+      FamilyNameCn = #{record.familynamecn,jdbcType=NVARCHAR},
+      GivenNameCn = #{record.givennamecn,jdbcType=NVARCHAR},
+      FamilyNameEn = #{record.familynameen,jdbcType=NVARCHAR},
+      GivenNameEn = #{record.givennameen,jdbcType=NVARCHAR},
+      Birthday = #{record.birthday,jdbcType=TIMESTAMP},
+      Gender = #{record.gender,jdbcType=INTEGER},
+      QualificationID = #{record.qualificationid,jdbcType=INTEGER},
+      CertificationID = #{record.certificationid,jdbcType=INTEGER},
+      InputDate = #{record.inputdate,jdbcType=TIMESTAMP},
+      Status = #{record.status,jdbcType=INTEGER},
+      Version = #{record.version,jdbcType=INTEGER},
+      Picture = #{record.picture,jdbcType=NVARCHAR},
+      LastEmailDateForStaffInfoChangingSubmit = #{record.lastemaildateforstaffinfochangingsubmit,jdbcType=TIMESTAMP},
+      ResumeProveFilePath = #{record.resumeprovefilepath,jdbcType=NVARCHAR}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.daimler.aftersales.entity.Userinfo">
+    update UserInfo
+    <set>
+      <if test="cardtype != null">
+        CardType = #{cardtype,jdbcType=INTEGER},
+      </if>
+      <if test="cardnumber != null">
+        CardNumber = #{cardnumber,jdbcType=NVARCHAR},
+      </if>
+      <if test="drivinglicense != null">
+        DrivingLicense = #{drivinglicense,jdbcType=NVARCHAR},
+      </if>
+      <if test="familynamecn != null">
+        FamilyNameCn = #{familynamecn,jdbcType=NVARCHAR},
+      </if>
+      <if test="givennamecn != null">
+        GivenNameCn = #{givennamecn,jdbcType=NVARCHAR},
+      </if>
+      <if test="familynameen != null">
+        FamilyNameEn = #{familynameen,jdbcType=NVARCHAR},
+      </if>
+      <if test="givennameen != null">
+        GivenNameEn = #{givennameen,jdbcType=NVARCHAR},
+      </if>
+      <if test="birthday != null">
+        Birthday = #{birthday,jdbcType=TIMESTAMP},
+      </if>
+      <if test="gender != null">
+        Gender = #{gender,jdbcType=INTEGER},
+      </if>
+      <if test="qualificationid != null">
+        QualificationID = #{qualificationid,jdbcType=INTEGER},
+      </if>
+      <if test="certificationid != null">
+        CertificationID = #{certificationid,jdbcType=INTEGER},
+      </if>
+      <if test="inputdate != null">
+        InputDate = #{inputdate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="status != null">
+        Status = #{status,jdbcType=INTEGER},
+      </if>
+      <if test="version != null">
+        Version = #{version,jdbcType=INTEGER},
+      </if>
+      <if test="picture != null">
+        Picture = #{picture,jdbcType=NVARCHAR},
+      </if>
+      <if test="lastemaildateforstaffinfochangingsubmit != null">
+        LastEmailDateForStaffInfoChangingSubmit = #{lastemaildateforstaffinfochangingsubmit,jdbcType=TIMESTAMP},
+      </if>
+      <if test="resumeprovefilepath != null">
+        ResumeProveFilePath = #{resumeprovefilepath,jdbcType=NVARCHAR},
+      </if>
+    </set>
+    where UserID = #{userid,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.daimler.aftersales.entity.Userinfo">
+    update UserInfo
+    set CardType = #{cardtype,jdbcType=INTEGER},
+      CardNumber = #{cardnumber,jdbcType=NVARCHAR},
+      DrivingLicense = #{drivinglicense,jdbcType=NVARCHAR},
+      FamilyNameCn = #{familynamecn,jdbcType=NVARCHAR},
+      GivenNameCn = #{givennamecn,jdbcType=NVARCHAR},
+      FamilyNameEn = #{familynameen,jdbcType=NVARCHAR},
+      GivenNameEn = #{givennameen,jdbcType=NVARCHAR},
+      Birthday = #{birthday,jdbcType=TIMESTAMP},
+      Gender = #{gender,jdbcType=INTEGER},
+      QualificationID = #{qualificationid,jdbcType=INTEGER},
+      CertificationID = #{certificationid,jdbcType=INTEGER},
+      InputDate = #{inputdate,jdbcType=TIMESTAMP},
+      Status = #{status,jdbcType=INTEGER},
+      Version = #{version,jdbcType=INTEGER},
+      Picture = #{picture,jdbcType=NVARCHAR},
+      LastEmailDateForStaffInfoChangingSubmit = #{lastemaildateforstaffinfochangingsubmit,jdbcType=TIMESTAMP},
+      ResumeProveFilePath = #{resumeprovefilepath,jdbcType=NVARCHAR}
+    where UserID = #{userid,jdbcType=INTEGER}
+  </update>
+</mapper>

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.daimler.aftersales.iMappers.ProvinceMapper">
+  <resultMap id="BaseResultMap" type="com.daimler.aftersales.entity.Province">
+    <id column="ProvinceID" jdbcType="INTEGER" property="provinceid" />
+    <result column="ProvinceNameCn" jdbcType="NVARCHAR" property="provincenamecn" />
+    <result column="ProvinceNameEn" jdbcType="NVARCHAR" property="provincenameen" />
+    <result column="Sort" jdbcType="INTEGER" property="sort" />
+    <result column="ProvinceShortNameCn" jdbcType="NVARCHAR" property="provinceshortnamecn" />
+    <result column="ProvinceShortNameEn" jdbcType="NVARCHAR" property="provinceshortnameen" />
+  </resultMap>
+  <delete id="truncate">
+    DELETE  from Province
+  </delete>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    ProvinceID, ProvinceNameCn, ProvinceNameEn, Sort, ProvinceShortNameCn, ProvinceShortNameEn
+  </sql>
+  <select id="selectByExample" parameterType="com.daimler.aftersales.entity.ProvinceExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from Province
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from Province
+    where ProvinceID = #{provinceid,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from Province
+    where ProvinceID = #{provinceid,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.daimler.aftersales.entity.ProvinceExample">
+    delete from Province
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.daimler.aftersales.entity.Province">
+    insert into Province (ProvinceID, ProvinceNameCn, ProvinceNameEn, 
+      Sort, ProvinceShortNameCn, ProvinceShortNameEn
+      )
+    values (#{provinceid,jdbcType=INTEGER}, #{provincenamecn,jdbcType=NVARCHAR}, #{provincenameen,jdbcType=NVARCHAR}, 
+      #{sort,jdbcType=INTEGER}, #{provinceshortnamecn,jdbcType=NVARCHAR}, #{provinceshortnameen,jdbcType=NVARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.daimler.aftersales.entity.Province">
+    insert into Province
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="provinceid != null">
+        ProvinceID,
+      </if>
+      <if test="provincenamecn != null">
+        ProvinceNameCn,
+      </if>
+      <if test="provincenameen != null">
+        ProvinceNameEn,
+      </if>
+      <if test="sort != null">
+        Sort,
+      </if>
+      <if test="provinceshortnamecn != null">
+        ProvinceShortNameCn,
+      </if>
+      <if test="provinceshortnameen != null">
+        ProvinceShortNameEn,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="provinceid != null">
+        #{provinceid,jdbcType=INTEGER},
+      </if>
+      <if test="provincenamecn != null">
+        #{provincenamecn,jdbcType=NVARCHAR},
+      </if>
+      <if test="provincenameen != null">
+        #{provincenameen,jdbcType=NVARCHAR},
+      </if>
+      <if test="sort != null">
+        #{sort,jdbcType=INTEGER},
+      </if>
+      <if test="provinceshortnamecn != null">
+        #{provinceshortnamecn,jdbcType=NVARCHAR},
+      </if>
+      <if test="provinceshortnameen != null">
+        #{provinceshortnameen,jdbcType=NVARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.daimler.aftersales.entity.ProvinceExample" resultType="java.lang.Integer">
+    select count(*) from Province
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update Province
+    <set>
+      <if test="record.provinceid != null">
+        ProvinceID = #{record.provinceid,jdbcType=INTEGER},
+      </if>
+      <if test="record.provincenamecn != null">
+        ProvinceNameCn = #{record.provincenamecn,jdbcType=NVARCHAR},
+      </if>
+      <if test="record.provincenameen != null">
+        ProvinceNameEn = #{record.provincenameen,jdbcType=NVARCHAR},
+      </if>
+      <if test="record.sort != null">
+        Sort = #{record.sort,jdbcType=INTEGER},
+      </if>
+      <if test="record.provinceshortnamecn != null">
+        ProvinceShortNameCn = #{record.provinceshortnamecn,jdbcType=NVARCHAR},
+      </if>
+      <if test="record.provinceshortnameen != null">
+        ProvinceShortNameEn = #{record.provinceshortnameen,jdbcType=NVARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update Province
+    set ProvinceID = #{record.provinceid,jdbcType=INTEGER},
+      ProvinceNameCn = #{record.provincenamecn,jdbcType=NVARCHAR},
+      ProvinceNameEn = #{record.provincenameen,jdbcType=NVARCHAR},
+      Sort = #{record.sort,jdbcType=INTEGER},
+      ProvinceShortNameCn = #{record.provinceshortnamecn,jdbcType=NVARCHAR},
+      ProvinceShortNameEn = #{record.provinceshortnameen,jdbcType=NVARCHAR}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.daimler.aftersales.entity.Province">
+    update Province
+    <set>
+      <if test="provincenamecn != null">
+        ProvinceNameCn = #{provincenamecn,jdbcType=NVARCHAR},
+      </if>
+      <if test="provincenameen != null">
+        ProvinceNameEn = #{provincenameen,jdbcType=NVARCHAR},
+      </if>
+      <if test="sort != null">
+        Sort = #{sort,jdbcType=INTEGER},
+      </if>
+      <if test="provinceshortnamecn != null">
+        ProvinceShortNameCn = #{provinceshortnamecn,jdbcType=NVARCHAR},
+      </if>
+      <if test="provinceshortnameen != null">
+        ProvinceShortNameEn = #{provinceshortnameen,jdbcType=NVARCHAR},
+      </if>
+    </set>
+    where ProvinceID = #{provinceid,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.daimler.aftersales.entity.Province">
+    update Province
+    set ProvinceNameCn = #{provincenamecn,jdbcType=NVARCHAR},
+      ProvinceNameEn = #{provincenameen,jdbcType=NVARCHAR},
+      Sort = #{sort,jdbcType=INTEGER},
+      ProvinceShortNameCn = #{provinceshortnamecn,jdbcType=NVARCHAR},
+      ProvinceShortNameEn = #{provinceshortnameen,jdbcType=NVARCHAR}
+    where ProvinceID = #{provinceid,jdbcType=INTEGER}
+  </update>
+</mapper>

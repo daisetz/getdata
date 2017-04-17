@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.daimler.aftersales.iMappers.OchartMapper">
+  <resultMap id="BaseResultMap" type="com.daimler.aftersales.entity.Ochart">
+    <id column="OChartID" jdbcType="BIGINT" property="ochartid" />
+    <result column="CompanyID" jdbcType="INTEGER" property="companyid" />
+    <result column="DealerID" jdbcType="INTEGER" property="dealerid" />
+    <result column="ParentID" jdbcType="BIGINT" property="parentid" />
+    <result column="NameCn" jdbcType="NVARCHAR" property="namecn" />
+    <result column="NameEn" jdbcType="NVARCHAR" property="nameen" />
+    <result column="DescriptionCn" jdbcType="NVARCHAR" property="descriptioncn" />
+    <result column="DescriptionEn" jdbcType="NVARCHAR" property="descriptionen" />
+    <result column="Sort" jdbcType="INTEGER" property="sort" />
+  </resultMap>
+  <delete id="truncate">
+    delete from OChart
+  </delete>
+  <insert id="insertList" parameterType="java.util.List">
+    insert into OChart (OChartID, CompanyID, DealerID,
+    ParentID, NameCn, NameEn,
+    DescriptionCn, DescriptionEn, Sort
+    )
+    values
+    <foreach collection="list" item="com.daimler.aftersales.entity.Ochart" index="index" separator=",">
+    (#{com.daimler.aftersales.entity.Ochart.ochartid,jdbcType=BIGINT},
+      #{com.daimler.aftersales.entity.Ochart.companyid,jdbcType=INTEGER},
+      #{com.daimler.aftersales.entity.Ochart.dealerid,jdbcType=INTEGER},
+    #{com.daimler.aftersales.entity.Ochart.parentid,jdbcType=BIGINT},
+      #{com.daimler.aftersales.entity.Ochart.namecn,jdbcType=NVARCHAR},
+      #{com.daimler.aftersales.entity.Ochart.nameen,jdbcType=NVARCHAR},
+    #{com.daimler.aftersales.entity.Ochart.descriptioncn,jdbcType=NVARCHAR},
+      #{com.daimler.aftersales.entity.Ochart.descriptionen,jdbcType=NVARCHAR},
+      #{com.daimler.aftersales.entity.Ochart.sort,jdbcType=INTEGER}
+    )
+    </foreach>
+  </insert>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    OChartID, CompanyID, DealerID, ParentID, NameCn, NameEn, DescriptionCn, DescriptionEn, 
+    Sort
+  </sql>
+  <select id="selectByExample" parameterType="com.daimler.aftersales.entity.OchartExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from OChart
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from OChart
+    where OChartID = #{ochartid,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from OChart
+    where OChartID = #{ochartid,jdbcType=BIGINT}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.daimler.aftersales.entity.OchartExample">
+    delete from OChart
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.daimler.aftersales.entity.Ochart">
+    insert into OChart (OChartID, CompanyID, DealerID, 
+      ParentID, NameCn, NameEn, 
+      DescriptionCn, DescriptionEn, Sort
+      )
+    values (#{ochartid,jdbcType=BIGINT}, #{companyid,jdbcType=INTEGER}, #{dealerid,jdbcType=INTEGER}, 
+      #{parentid,jdbcType=BIGINT}, #{namecn,jdbcType=NVARCHAR}, #{nameen,jdbcType=NVARCHAR}, 
+      #{descriptioncn,jdbcType=NVARCHAR}, #{descriptionen,jdbcType=NVARCHAR}, #{sort,jdbcType=INTEGER}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.daimler.aftersales.entity.Ochart">
+    insert into OChart
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="ochartid != null">
+        OChartID,
+      </if>
+      <if test="companyid != null">
+        CompanyID,
+      </if>
+      <if test="dealerid != null">
+        DealerID,
+      </if>
+      <if test="parentid != null">
+        ParentID,
+      </if>
+      <if test="namecn != null">
+        NameCn,
+      </if>
+      <if test="nameen != null">
+        NameEn,
+      </if>
+      <if test="descriptioncn != null">
+        DescriptionCn,
+      </if>
+      <if test="descriptionen != null">
+        DescriptionEn,
+      </if>
+      <if test="sort != null">
+        Sort,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="ochartid != null">
+        #{ochartid,jdbcType=BIGINT},
+      </if>
+      <if test="companyid != null">
+        #{companyid,jdbcType=INTEGER},
+      </if>
+      <if test="dealerid != null">
+        #{dealerid,jdbcType=INTEGER},
+      </if>
+      <if test="parentid != null">
+        #{parentid,jdbcType=BIGINT},
+      </if>
+      <if test="namecn != null">
+        #{namecn,jdbcType=NVARCHAR},
+      </if>
+      <if test="nameen != null">
+        #{nameen,jdbcType=NVARCHAR},
+      </if>
+      <if test="descriptioncn != null">
+        #{descriptioncn,jdbcType=NVARCHAR},
+      </if>
+      <if test="descriptionen != null">
+        #{descriptionen,jdbcType=NVARCHAR},
+      </if>
+      <if test="sort != null">
+        #{sort,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.daimler.aftersales.entity.OchartExample" resultType="java.lang.Integer">
+    select count(*) from OChart
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update OChart
+    <set>
+      <if test="record.ochartid != null">
+        OChartID = #{record.ochartid,jdbcType=BIGINT},
+      </if>
+      <if test="record.companyid != null">
+        CompanyID = #{record.companyid,jdbcType=INTEGER},
+      </if>
+      <if test="record.dealerid != null">
+        DealerID = #{record.dealerid,jdbcType=INTEGER},
+      </if>
+      <if test="record.parentid != null">
+        ParentID = #{record.parentid,jdbcType=BIGINT},
+      </if>
+      <if test="record.namecn != null">
+        NameCn = #{record.namecn,jdbcType=NVARCHAR},
+      </if>
+      <if test="record.nameen != null">
+        NameEn = #{record.nameen,jdbcType=NVARCHAR},
+      </if>
+      <if test="record.descriptioncn != null">
+        DescriptionCn = #{record.descriptioncn,jdbcType=NVARCHAR},
+      </if>
+      <if test="record.descriptionen != null">
+        DescriptionEn = #{record.descriptionen,jdbcType=NVARCHAR},
+      </if>
+      <if test="record.sort != null">
+        Sort = #{record.sort,jdbcType=INTEGER},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update OChart
+    set OChartID = #{record.ochartid,jdbcType=BIGINT},
+      CompanyID = #{record.companyid,jdbcType=INTEGER},
+      DealerID = #{record.dealerid,jdbcType=INTEGER},
+      ParentID = #{record.parentid,jdbcType=BIGINT},
+      NameCn = #{record.namecn,jdbcType=NVARCHAR},
+      NameEn = #{record.nameen,jdbcType=NVARCHAR},
+      DescriptionCn = #{record.descriptioncn,jdbcType=NVARCHAR},
+      DescriptionEn = #{record.descriptionen,jdbcType=NVARCHAR},
+      Sort = #{record.sort,jdbcType=INTEGER}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.daimler.aftersales.entity.Ochart">
+    update OChart
+    <set>
+      <if test="companyid != null">
+        CompanyID = #{companyid,jdbcType=INTEGER},
+      </if>
+      <if test="dealerid != null">
+        DealerID = #{dealerid,jdbcType=INTEGER},
+      </if>
+      <if test="parentid != null">
+        ParentID = #{parentid,jdbcType=BIGINT},
+      </if>
+      <if test="namecn != null">
+        NameCn = #{namecn,jdbcType=NVARCHAR},
+      </if>
+      <if test="nameen != null">
+        NameEn = #{nameen,jdbcType=NVARCHAR},
+      </if>
+      <if test="descriptioncn != null">
+        DescriptionCn = #{descriptioncn,jdbcType=NVARCHAR},
+      </if>
+      <if test="descriptionen != null">
+        DescriptionEn = #{descriptionen,jdbcType=NVARCHAR},
+      </if>
+      <if test="sort != null">
+        Sort = #{sort,jdbcType=INTEGER},
+      </if>
+    </set>
+    where OChartID = #{ochartid,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.daimler.aftersales.entity.Ochart">
+    update OChart
+    set CompanyID = #{companyid,jdbcType=INTEGER},
+      DealerID = #{dealerid,jdbcType=INTEGER},
+      ParentID = #{parentid,jdbcType=BIGINT},
+      NameCn = #{namecn,jdbcType=NVARCHAR},
+      NameEn = #{nameen,jdbcType=NVARCHAR},
+      DescriptionCn = #{descriptioncn,jdbcType=NVARCHAR},
+      DescriptionEn = #{descriptionen,jdbcType=NVARCHAR},
+      Sort = #{sort,jdbcType=INTEGER}
+    where OChartID = #{ochartid,jdbcType=BIGINT}
+  </update>
+</mapper>

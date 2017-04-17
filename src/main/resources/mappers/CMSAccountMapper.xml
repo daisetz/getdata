@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.daimler.aftersales.iMappers.ICMSAccountDao">
+
+    <delete id="truncate">
+        delete from CMS_Account
+    </delete>
+
+    <insert id="insertCMSAccountData" parameterType="com.daimler.aftersales.entity.CMSAccountPOJO">
+        insert into CMS_Account
+        (AccountId, UserID, [Name], HashPassword,
+         Status, CreateDate, Email, PhoneCountryNo,
+          PhoneAreaNo, PhoneNo, FaxCountryNo, FaxAreaNo,
+           FaxNo, MobilePhoneCountryNo, MobilePhoneNo, Version,
+            DimissionReasonID, IsActiveDemission, DemissionDate,
+             PasswordChangeDate, PasswordChangeNotifyStatus,
+              Remarks, PositionChangeDate, IsUpdatedByExcel)
+        values (#{accountId},#{userID},#{name},#{hashPassword},
+        #{status},#{createDate},#{email},#{phoneCountryNo},
+        #{phoneAreaNo},#{phoneNo},#{faxCountryNo},#{faxAreaNo},
+        #{faxNo},#{mobilePhoneCountryNo},#{mobilePhoneNo},#{version},
+        #{dimissionReasonID},#{isActiveDemission},#{demissionDate},
+        #{passwordChangeDate},#{passwordChangeNotifyStatus},
+        #{remarks},#{positionChangeDate},#{isUpdatedByExcel})
+    </insert>
+
+    <insert id="insertList" parameterType="java.util.List">
+        insert into CMS_Account
+        (AccountId, UserID, [Name], HashPassword,
+        Status, CreateDate, Email, PhoneCountryNo,
+        PhoneAreaNo, PhoneNo, FaxCountryNo, FaxAreaNo,
+        FaxNo, MobilePhoneCountryNo, MobilePhoneNo, Version,
+        DimissionReasonID, IsActiveDemission, DemissionDate,
+        PasswordChangeDate, PasswordChangeNotifyStatus,
+        Remarks, PositionChangeDate, IsUpdatedByExcel)
+        values
+        <foreach collection="list" item="com.daimler.aftersales.entity.CMSAccountPOJO" index="index" separator=",">
+            (#{com.daimler.aftersales.entity.CMSAccountPOJO.accountId,jdbcType=INTEGER},
+            #{com.daimler.aftersales.entity.CMSAccountPOJO.userID,jdbcType=INTEGER},
+            #{com.daimler.aftersales.entity.CMSAccountPOJO.name,jdbcType=NVARCHAR},
+            #{com.daimler.aftersales.entity.CMSAccountPOJO.hashPassword,jdbcType=NVARCHAR},
+            #{com.daimler.aftersales.entity.CMSAccountPOJO.status,jdbcType=INTEGER},
+            #{com.daimler.aftersales.entity.CMSAccountPOJO.createDate,jdbcType=TIMESTAMP},
+            #{com.daimler.aftersales.entity.CMSAccountPOJO.email,jdbcType=NVARCHAR},
+            #{com.daimler.aftersales.entity.CMSAccountPOJO.phoneCountryNo,jdbcType=NVARCHAR},
+            #{com.daimler.aftersales.entity.CMSAccountPOJO.phoneAreaNo,jdbcType=NVARCHAR},
+            #{com.daimler.aftersales.entity.CMSAccountPOJO.phoneNo,jdbcType=NVARCHAR},
+            #{com.daimler.aftersales.entity.CMSAccountPOJO.faxCountryNo,jdbcType=NVARCHAR},
+            #{com.daimler.aftersales.entity.CMSAccountPOJO.faxAreaNo,jdbcType=NVARCHAR},
+            #{com.daimler.aftersales.entity.CMSAccountPOJO.faxNo,jdbcType=NVARCHAR},
+            #{com.daimler.aftersales.entity.CMSAccountPOJO.mobilePhoneCountryNo,jdbcType=NVARCHAR},
+            #{com.daimler.aftersales.entity.CMSAccountPOJO.mobilePhoneNo,jdbcType=NVARCHAR},
+            #{com.daimler.aftersales.entity.CMSAccountPOJO.version,jdbcType=INTEGER},
+            #{com.daimler.aftersales.entity.CMSAccountPOJO.dimissionReasonID,jdbcType=NVARCHAR},
+            #{com.daimler.aftersales.entity.CMSAccountPOJO.isActiveDemission,jdbcType=INTEGER},
+            #{com.daimler.aftersales.entity.CMSAccountPOJO.demissionDate,jdbcType=TIMESTAMP},
+            #{com.daimler.aftersales.entity.CMSAccountPOJO.passwordChangeDate,jdbcType=TIMESTAMP},
+            #{com.daimler.aftersales.entity.CMSAccountPOJO.passwordChangeNotifyStatus,jdbcType=INTEGER},
+            #{com.daimler.aftersales.entity.CMSAccountPOJO.remarks,jdbcType=NVARCHAR},
+            #{com.daimler.aftersales.entity.CMSAccountPOJO.positionChangeDate,jdbcType=TIMESTAMP},
+            #{com.daimler.aftersales.entity.CMSAccountPOJO.isUpdatedByExcel,jdbcType=INTEGER})
+        </foreach>
+    </insert>
+
+
+</mapper>

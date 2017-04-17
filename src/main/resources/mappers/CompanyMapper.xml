@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.daimler.aftersales.iMappers.ICompanyDao">
+    <delete id="truncate">
+        delete from Company
+    </delete>
+
+    <insert id="insertCompanyData" parameterType="com.daimler.aftersales.entity.CompanyPOJO">
+        insert into Company (CompanyID, CompanyNameCn, CompanyNameEn, RegisteredAddressCn, RegisteredAddressEn, Zip, InputDate, CreateMbclAccountID, Status)
+        values (#{companyID},#{companyNameCn},#{companyNameEn},#{registeredAddressCn},#{registeredAddressEn},#{zip},
+        #{inputDate},#{createMbclAccountID},#{status})
+    </insert>
+
+</mapper>

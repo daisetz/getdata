@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.daimler.aftersales.iMappers.IBrandDao">
+    <resultMap id="brandMap" type="com.daimler.aftersales.entity.BrandPOJO">
+        <result property="brandID" javaType="Integer" column="BrandID" ></result>
+        <result property="brandNameCn" javaType="String" column="BrandNameCn"></result>
+        <result property="brandIconCn" javaType="String" column="BrandIconCn"></result>
+        <result property="brandNameEn" javaType="String" column="BrandNameEn"></result>
+        <result property="brandIconEn" javaType="String" column="BrandIconEn"></result>
+        <result property="sort" javaType="Integer" column="Sort"></result>
+        <result property="shortName" javaType="String" column="Shortname"></result>
+    </resultMap>
+
+    <delete id="truncate">
+        delete from Brand
+    </delete>
+
+    <insert id="insertBrandData" parameterType="com.daimler.aftersales.entity.BrandPOJO">
+        insert into Brand (BrandID,BrandNameCn,BrandIconCn,BrandNameEn,BrandIconEn,Sort,Shortname)
+        values (#{brandID},#{brandNameCn},#{brandIconCn},#{brandNameEn},#{brandIconEn},#{sort},#{shortName})
+    </insert>
+
+</mapper>

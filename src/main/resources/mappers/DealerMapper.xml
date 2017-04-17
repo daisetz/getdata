@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.daimler.aftersales.iMappers.IDealerDao">
+    <delete id="truncate">
+        delete from Dealer
+    </delete>
+
+    <insert id="insertDealerData" parameterType="com.daimler.aftersales.entity.DealerPOJO">
+        insert into Dealer (DealerID, DealerNo, DealerCode, DealerOwnerID, DealerNameCn, DealerNameEn, DealerShortNameCn, DealerShortNameEn, FormatID, FormatCodeID, Format, POCCDate, OpeningDate, SRBusinessHoursWorkday, SCBusinessHoursWorkday, SRBusinessHoursSat, SCBusinessHoursSat, SRBusinessHoursSun, SCBusinessHoursSun, StreetMapPath, OutletInteriorPhotoPath, OutletExteriorPhotoPath, ProvinceID, CityID, ZipCode, OperatingAddressCn, OperatingAddressEn, FaxCountryNo, FaxAreaNo, FaxNo, PhoneCountryNo, PhoneAreaNo, PhoneNo, SupportPhoneCountryNo, SupportPhoneAreaNo, SupportPhoneNo, Email, HomePage, InputDate, Status, Version, DealerGroupID, LeadingGSSN)
+        values (
+        #{DealerID},
+        #{DealerNo},
+        #{DealerCode},
+        #{DealerOwnerID},
+        #{DealerNameCn},
+        #{DealerNameEn},
+        #{DealerShortNameCn},
+        #{DealerShortNameEn},
+        #{FormatID},
+        #{FormatCodeID},
+        #{Format},
+        #{POCCDate},
+        #{OpeningDate},
+        #{SRBusinessHoursWorkday},
+        #{SCBusinessHoursWorkday},
+        #{SRBusinessHoursSat},
+        #{SCBusinessHoursSat},
+        #{SRBusinessHoursSun},
+        #{SCBusinessHoursSun},
+        #{StreetMapPath},
+        #{OutletInteriorPhotoPath},
+        #{OutletExteriorPhotoPath},
+        #{ProvinceID},
+        #{CityID},
+        #{ZipCode},
+        #{OperatingAddressCn},
+        #{OperatingAddressEn},
+        #{FaxCountryNo},
+        #{FaxAreaNo},
+        #{FaxNo},
+        #{PhoneCountryNo},
+         #{PhoneAreaNo},
+        #{PhoneNo},
+        #{SupportPhoneCountryNo},
+        #{SupportPhoneAreaNo},
+        #{SupportPhoneNo},
+        #{Email},
+        #{HomePage},
+         #{InputDate},
+        #{Status},
+        #{Version},
+        #{DealerGroupID},
+        #{LeadingGSSN})
+    </insert>
+
+</mapper>

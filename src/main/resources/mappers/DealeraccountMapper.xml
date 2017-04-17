@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.daimler.aftersales.iMappers.DealeraccountMapper">
+  <resultMap id="BaseResultMap" type="com.daimler.aftersales.entity.Dealeraccount">
+    <id column="DealerAccountID" jdbcType="INTEGER" property="dealeraccountid" />
+    <result column="CompanyID" jdbcType="INTEGER" property="companyid" />
+    <result column="DealerID" jdbcType="INTEGER" property="dealerid" />
+    <result column="PositionTypeID" jdbcType="INTEGER" property="positiontypeid" />
+    <result column="PositionID" jdbcType="BIGINT" property="positionid" />
+    <result column="DepartmentID" jdbcType="BIGINT" property="departmentid" />
+    <result column="Division" jdbcType="NVARCHAR" property="division" />
+    <result column="ChangeStatus" jdbcType="INTEGER" property="changestatus" />
+    <result column="ZipCode" jdbcType="NVARCHAR" property="zipcode" />
+    <result column="UpdateDate" jdbcType="TIMESTAMP" property="updatedate" />
+    <result column="ApplyStatus" jdbcType="INTEGER" property="applystatus" />
+    <result column="ProxyPeriod" jdbcType="TIMESTAMP" property="proxyperiod" />
+  </resultMap>
+  <delete id="truncate">
+    delete from DealerAccount
+  </delete>
+  <insert id="insertList" parameterType="java.util.List">
+    insert into DealerAccount (DealerAccountID, CompanyID, DealerID,
+      PositionTypeID, PositionID, DepartmentID,
+      Division, ChangeStatus, ZipCode,
+      UpdateDate, ApplyStatus, ProxyPeriod
+      )
+    values
+      <foreach collection="list" item="com.daimler.aftersales.entity.Dealeraccount" index="index" separator=",">
+        (#{com.daimler.aftersales.entity.Dealeraccount.dealeraccountid,jdbcType=INTEGER},
+        #{com.daimler.aftersales.entity.Dealeraccount.companyid,jdbcType=INTEGER},
+        #{com.daimler.aftersales.entity.Dealeraccount.dealerid,jdbcType=INTEGER},
+        #{com.daimler.aftersales.entity.Dealeraccount.positiontypeid,jdbcType=INTEGER},
+        #{com.daimler.aftersales.entity.Dealeraccount.positionid,jdbcType=BIGINT},
+        #{com.daimler.aftersales.entity.Dealeraccount.departmentid,jdbcType=BIGINT},
+        #{com.daimler.aftersales.entity.Dealeraccount.division,jdbcType=NVARCHAR},
+        #{com.daimler.aftersales.entity.Dealeraccount.changestatus,jdbcType=INTEGER},
+        #{com.daimler.aftersales.entity.Dealeraccount.zipcode,jdbcType=NVARCHAR},
+        #{com.daimler.aftersales.entity.Dealeraccount.updatedate,jdbcType=TIMESTAMP},
+        #{com.daimler.aftersales.entity.Dealeraccount.applystatus,jdbcType=INTEGER},
+        #{com.daimler.aftersales.entity.Dealeraccount.proxyperiod,jdbcType=TIMESTAMP}
+        )
+      </foreach>
+  </insert>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    DealerAccountID, CompanyID, DealerID, PositionTypeID, PositionID, DepartmentID, Division, 
+    ChangeStatus, ZipCode, UpdateDate, ApplyStatus, ProxyPeriod
+  </sql>
+  <select id="selectByExample" parameterType="com.daimler.aftersales.entity.DealeraccountExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from DealerAccount
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from DealerAccount
+    where DealerAccountID = #{dealeraccountid,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from DealerAccount
+    where DealerAccountID = #{dealeraccountid,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.daimler.aftersales.entity.DealeraccountExample">
+    delete from DealerAccount
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.daimler.aftersales.entity.Dealeraccount">
+    insert into DealerAccount (DealerAccountID, CompanyID, DealerID, 
+      PositionTypeID, PositionID, DepartmentID, 
+      Division, ChangeStatus, ZipCode, 
+      UpdateDate, ApplyStatus, ProxyPeriod
+      )
+    values (#{dealeraccountid,jdbcType=INTEGER}, #{companyid,jdbcType=INTEGER}, #{dealerid,jdbcType=INTEGER}, 
+      #{positiontypeid,jdbcType=INTEGER}, #{positionid,jdbcType=BIGINT}, #{departmentid,jdbcType=BIGINT}, 
+      #{division,jdbcType=NVARCHAR}, #{changestatus,jdbcType=INTEGER}, #{zipcode,jdbcType=NVARCHAR}, 
+      #{updatedate,jdbcType=TIMESTAMP}, #{applystatus,jdbcType=INTEGER}, #{proxyperiod,jdbcType=TIMESTAMP}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.daimler.aftersales.entity.Dealeraccount">
+    insert into DealerAccount
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="dealeraccountid != null">
+        DealerAccountID,
+      </if>
+      <if test="companyid != null">
+        CompanyID,
+      </if>
+      <if test="dealerid != null">
+        DealerID,
+      </if>
+      <if test="positiontypeid != null">
+        PositionTypeID,
+      </if>
+      <if test="positionid != null">
+        PositionID,
+      </if>
+      <if test="departmentid != null">
+        DepartmentID,
+      </if>
+      <if test="division != null">
+        Division,
+      </if>
+      <if test="changestatus != null">
+        ChangeStatus,
+      </if>
+      <if test="zipcode != null">
+        ZipCode,
+      </if>
+      <if test="updatedate != null">
+        UpdateDate,
+      </if>
+      <if test="applystatus != null">
+        ApplyStatus,
+      </if>
+      <if test="proxyperiod != null">
+        ProxyPeriod,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="dealeraccountid != null">
+        #{dealeraccountid,jdbcType=INTEGER},
+      </if>
+      <if test="companyid != null">
+        #{companyid,jdbcType=INTEGER},
+      </if>
+      <if test="dealerid != null">
+        #{dealerid,jdbcType=INTEGER},
+      </if>
+      <if test="positiontypeid != null">
+        #{positiontypeid,jdbcType=INTEGER},
+      </if>
+      <if test="positionid != null">
+        #{positionid,jdbcType=BIGINT},
+      </if>
+      <if test="departmentid != null">
+        #{departmentid,jdbcType=BIGINT},
+      </if>
+      <if test="division != null">
+        #{division,jdbcType=NVARCHAR},
+      </if>
+      <if test="changestatus != null">
+        #{changestatus,jdbcType=INTEGER},
+      </if>
+      <if test="zipcode != null">
+        #{zipcode,jdbcType=NVARCHAR},
+      </if>
+      <if test="updatedate != null">
+        #{updatedate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="applystatus != null">
+        #{applystatus,jdbcType=INTEGER},
+      </if>
+      <if test="proxyperiod != null">
+        #{proxyperiod,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.daimler.aftersales.entity.DealeraccountExample" resultType="java.lang.Integer">
+    select count(*) from DealerAccount
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update DealerAccount
+    <set>
+      <if test="record.dealeraccountid != null">
+        DealerAccountID = #{record.dealeraccountid,jdbcType=INTEGER},
+      </if>
+      <if test="record.companyid != null">
+        CompanyID = #{record.companyid,jdbcType=INTEGER},
+      </if>
+      <if test="record.dealerid != null">
+        DealerID = #{record.dealerid,jdbcType=INTEGER},
+      </if>
+      <if test="record.positiontypeid != null">
+        PositionTypeID = #{record.positiontypeid,jdbcType=INTEGER},
+      </if>
+      <if test="record.positionid != null">
+        PositionID = #{record.positionid,jdbcType=BIGINT},
+      </if>
+      <if test="record.departmentid != null">
+        DepartmentID = #{record.departmentid,jdbcType=BIGINT},
+      </if>
+      <if test="record.division != null">
+        Division = #{record.division,jdbcType=NVARCHAR},
+      </if>
+      <if test="record.changestatus != null">
+        ChangeStatus = #{record.changestatus,jdbcType=INTEGER},
+      </if>
+      <if test="record.zipcode != null">
+        ZipCode = #{record.zipcode,jdbcType=NVARCHAR},
+      </if>
+      <if test="record.updatedate != null">
+        UpdateDate = #{record.updatedate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.applystatus != null">
+        ApplyStatus = #{record.applystatus,jdbcType=INTEGER},
+      </if>
+      <if test="record.proxyperiod != null">
+        ProxyPeriod = #{record.proxyperiod,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update DealerAccount
+    set DealerAccountID = #{record.dealeraccountid,jdbcType=INTEGER},
+      CompanyID = #{record.companyid,jdbcType=INTEGER},
+      DealerID = #{record.dealerid,jdbcType=INTEGER},
+      PositionTypeID = #{record.positiontypeid,jdbcType=INTEGER},
+      PositionID = #{record.positionid,jdbcType=BIGINT},
+      DepartmentID = #{record.departmentid,jdbcType=BIGINT},
+      Division = #{record.division,jdbcType=NVARCHAR},
+      ChangeStatus = #{record.changestatus,jdbcType=INTEGER},
+      ZipCode = #{record.zipcode,jdbcType=NVARCHAR},
+      UpdateDate = #{record.updatedate,jdbcType=TIMESTAMP},
+      ApplyStatus = #{record.applystatus,jdbcType=INTEGER},
+      ProxyPeriod = #{record.proxyperiod,jdbcType=TIMESTAMP}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.daimler.aftersales.entity.Dealeraccount">
+    update DealerAccount
+    <set>
+      <if test="companyid != null">
+        CompanyID = #{companyid,jdbcType=INTEGER},
+      </if>
+      <if test="dealerid != null">
+        DealerID = #{dealerid,jdbcType=INTEGER},
+      </if>
+      <if test="positiontypeid != null">
+        PositionTypeID = #{positiontypeid,jdbcType=INTEGER},
+      </if>
+      <if test="positionid != null">
+        PositionID = #{positionid,jdbcType=BIGINT},
+      </if>
+      <if test="departmentid != null">
+        DepartmentID = #{departmentid,jdbcType=BIGINT},
+      </if>
+      <if test="division != null">
+        Division = #{division,jdbcType=NVARCHAR},
+      </if>
+      <if test="changestatus != null">
+        ChangeStatus = #{changestatus,jdbcType=INTEGER},
+      </if>
+      <if test="zipcode != null">
+        ZipCode = #{zipcode,jdbcType=NVARCHAR},
+      </if>
+      <if test="updatedate != null">
+        UpdateDate = #{updatedate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="applystatus != null">
+        ApplyStatus = #{applystatus,jdbcType=INTEGER},
+      </if>
+      <if test="proxyperiod != null">
+        ProxyPeriod = #{proxyperiod,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where DealerAccountID = #{dealeraccountid,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.daimler.aftersales.entity.Dealeraccount">
+    update DealerAccount
+    set CompanyID = #{companyid,jdbcType=INTEGER},
+      DealerID = #{dealerid,jdbcType=INTEGER},
+      PositionTypeID = #{positiontypeid,jdbcType=INTEGER},
+      PositionID = #{positionid,jdbcType=BIGINT},
+      DepartmentID = #{departmentid,jdbcType=BIGINT},
+      Division = #{division,jdbcType=NVARCHAR},
+      ChangeStatus = #{changestatus,jdbcType=INTEGER},
+      ZipCode = #{zipcode,jdbcType=NVARCHAR},
+      UpdateDate = #{updatedate,jdbcType=TIMESTAMP},
+      ApplyStatus = #{applystatus,jdbcType=INTEGER},
+      ProxyPeriod = #{proxyperiod,jdbcType=TIMESTAMP}
+    where DealerAccountID = #{dealeraccountid,jdbcType=INTEGER}
+  </update>
+</mapper>

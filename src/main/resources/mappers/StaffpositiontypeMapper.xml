@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.daimler.aftersales.iMappers.StaffpositiontypeMapper">
+  <resultMap id="BaseResultMap" type="com.daimler.aftersales.entity.Staffpositiontype">
+    <id column="StaffPositionTypeId" jdbcType="INTEGER" property="staffpositiontypeid" />
+    <result column="NameCn" jdbcType="NVARCHAR" property="namecn" />
+    <result column="NameEn" jdbcType="NVARCHAR" property="nameen" />
+  </resultMap>
+  <delete id="truncate">
+    DELETE  from StaffPositionType
+  </delete>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    StaffPositionTypeId, NameCn, NameEn
+  </sql>
+  <select id="selectByExample" parameterType="com.daimler.aftersales.entity.StaffpositiontypeExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from StaffPositionType
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from StaffPositionType
+    where StaffPositionTypeId = #{staffpositiontypeid,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from StaffPositionType
+    where StaffPositionTypeId = #{staffpositiontypeid,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.daimler.aftersales.entity.StaffpositiontypeExample">
+    delete from StaffPositionType
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.daimler.aftersales.entity.Staffpositiontype">
+    insert into StaffPositionType (StaffPositionTypeId, NameCn, NameEn
+      )
+    values (#{staffpositiontypeid,jdbcType=INTEGER}, #{namecn,jdbcType=NVARCHAR}, #{nameen,jdbcType=NVARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.daimler.aftersales.entity.Staffpositiontype">
+    insert into StaffPositionType
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="staffpositiontypeid != null">
+        StaffPositionTypeId,
+      </if>
+      <if test="namecn != null">
+        NameCn,
+      </if>
+      <if test="nameen != null">
+        NameEn,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="staffpositiontypeid != null">
+        #{staffpositiontypeid,jdbcType=INTEGER},
+      </if>
+      <if test="namecn != null">
+        #{namecn,jdbcType=NVARCHAR},
+      </if>
+      <if test="nameen != null">
+        #{nameen,jdbcType=NVARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.daimler.aftersales.entity.StaffpositiontypeExample" resultType="java.lang.Integer">
+    select count(*) from StaffPositionType
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update StaffPositionType
+    <set>
+      <if test="record.staffpositiontypeid != null">
+        StaffPositionTypeId = #{record.staffpositiontypeid,jdbcType=INTEGER},
+      </if>
+      <if test="record.namecn != null">
+        NameCn = #{record.namecn,jdbcType=NVARCHAR},
+      </if>
+      <if test="record.nameen != null">
+        NameEn = #{record.nameen,jdbcType=NVARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update StaffPositionType
+    set StaffPositionTypeId = #{record.staffpositiontypeid,jdbcType=INTEGER},
+      NameCn = #{record.namecn,jdbcType=NVARCHAR},
+      NameEn = #{record.nameen,jdbcType=NVARCHAR}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.daimler.aftersales.entity.Staffpositiontype">
+    update StaffPositionType
+    <set>
+      <if test="namecn != null">
+        NameCn = #{namecn,jdbcType=NVARCHAR},
+      </if>
+      <if test="nameen != null">
+        NameEn = #{nameen,jdbcType=NVARCHAR},
+      </if>
+    </set>
+    where StaffPositionTypeId = #{staffpositiontypeid,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.daimler.aftersales.entity.Staffpositiontype">
+    update StaffPositionType
+    set NameCn = #{namecn,jdbcType=NVARCHAR},
+      NameEn = #{nameen,jdbcType=NVARCHAR}
+    where StaffPositionTypeId = #{staffpositiontypeid,jdbcType=INTEGER}
+  </update>
+</mapper>
