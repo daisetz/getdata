@@ -22,7 +22,7 @@ public class ScheduleTasks {
     @Autowired
     private IFetchDataService fetchDataService;
 
-    @Scheduled(cron = "0 0 0 * * ?")
+    @Scheduled(cron = "0 0 2 * * ?")
     public void getDate(){
         logger.info("Scheduled Tasks start to run!");
         loginService.login();
