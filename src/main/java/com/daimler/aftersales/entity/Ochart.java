@@ -19,6 +19,10 @@ public class Ochart {
 
     private Integer sort;
 
+    private Integer ochartstandardid;
+
+    private Integer nodecategory;
+
     public Long getOchartid() {
         return ochartid;
     }
@@ -89,5 +93,21 @@ public class Ochart {
 
     public void setSort(Integer sort) {
         this.sort = sort;
+    }
+
+    public Integer getOchartstandardid() {
+        return ochartstandardid;
+    }
+
+    public void setOchartstandardid(Integer ochartstandardid) {
+        this.ochartstandardid = ochartstandardid;
+    }
+
+    public Integer getNodecategory() {
+        return nodecategory;
+    }
+
+    public void setNodecategory(Integer nodecategory) {
+        this.nodecategory = nodecategory;
     }
 }

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.daimler.aftersales.iMappers.OchartDealerDepartMapper">
+
+    <delete id="truncate">
+        delete from OchartDealerDepart
+    </delete>
+
+    <insert id="insertList" parameterType="java.util.List">
+        insert into OchartDealerDepart (Id, DealerId, DepartStandard
+        )
+        values
+        <foreach collection="list" item="com.daimler.aftersales.entity.OchartDealerDepart" index="index" separator=",">
+            (#{com.daimler.aftersales.entity.OchartDealerDepart.id,jdbcType=INTEGER},
+            #{com.daimler.aftersales.entity.OchartDealerDepart.dealerid,jdbcType=INTEGER},
+            #{com.daimler.aftersales.entity.OchartDealerDepart.departstandard,jdbcType=INTEGER}
+            )
+        </foreach>
+    </insert>
+
+</mapper>

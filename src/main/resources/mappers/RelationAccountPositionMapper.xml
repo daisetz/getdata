@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.daimler.aftersales.iMappers.RelationAccountPositionMapper">
+
+    <delete id="truncate">
+        delete from Relation_AccountPosition
+    </delete>
+
+    <insert id="insertList" parameterType="java.util.List">
+        insert into Relation_AccountPosition (AccountId, PositionId, DepartmentId
+        )
+        values
+        <foreach collection="list" item="com.daimler.aftersales.entity.RelationAccountPositionPOJO" index="index" separator=",">
+            (#{com.daimler.aftersales.entity.RelationAccountPositionPOJO.accountid,jdbcType=INTEGER},
+            #{com.daimler.aftersales.entity.RelationAccountPositionPOJO.positionid,jdbcType=BIGINT},
+            #{com.daimler.aftersales.entity.RelationAccountPositionPOJO.departmentid,jdbcType=BIGINT}
+            )
+        </foreach>
+    </insert>
+
+</mapper>

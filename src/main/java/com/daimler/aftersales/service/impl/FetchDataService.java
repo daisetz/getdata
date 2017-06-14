@@ -40,6 +40,7 @@ public class FetchDataService implements IFetchDataService {
 
     @Value("${dic.api.url.Brand}")
     private String brandUrl;
+
     @Override
     public void insertBrand(List<BrandPOJO> brandList) {
         iBrandDao.truncate();
@@ -53,10 +54,11 @@ public class FetchDataService implements IFetchDataService {
     private String certificationUrl;
     @Autowired
     private ICertificationDao iCertificationDao;
+
     @Override
     public void insertCertification(List<CertificationPOJO> certificationPOJOS) {
         iCertificationDao.truncate();
-        logger.info("Insert certification data into db:"+certificationPOJOS.size()+" records are goiong to insert");
+        logger.info("Insert certification data into db:" + certificationPOJOS.size() + " records are goiong to insert");
         int total = certificationPOJOS.size();
         List<List<CertificationPOJO>> certificationBranch = new ArrayList<>();
         int temp = 0;
@@ -85,10 +87,11 @@ public class FetchDataService implements IFetchDataService {
     private String cityUrl;
     @Autowired
     private ICityDao iCityDao;
+
     @Override
     public void insertCity(List<CityPOJO> cityList) {
         iCityDao.truncate();
-        logger.info("Insert city data into DB:"+cityList.size()+" records are going to insert");
+        logger.info("Insert city data into DB:" + cityList.size() + " records are going to insert");
         for (CityPOJO city : cityList) {
             iCityDao.insertCityData(city);
         }
@@ -98,10 +101,11 @@ public class FetchDataService implements IFetchDataService {
     private String cmsAccountUrl;
     @Autowired
     private ICMSAccountDao icmsAccountDao;
+
     @Override
     public void insertCMS_Account(List<CMSAccountPOJO> cmsAccountPOJOList) {
         icmsAccountDao.truncate();
-        logger.info("Insert CMS_Account into DB:"+cmsAccountPOJOList.size()+" records are going to insert");
+        logger.info("Insert CMS_Account into DB:" + cmsAccountPOJOList.size() + " records are going to insert");
         int total = cmsAccountPOJOList.size();
         List<List<CMSAccountPOJO>> cmsAccountBranch = new ArrayList<>();
         int temp = 0;
@@ -130,10 +134,11 @@ public class FetchDataService implements IFetchDataService {
     private String companyUrl;
     @Autowired
     private ICompanyDao iCompanyDao;
+
     @Override
     public void insertCompany(List<CompanyPOJO> companyPOJOList) {
         iCompanyDao.truncate();
-        logger.info("Insert company data into DB:"+companyPOJOList.size()+" records are going to insert");
+        logger.info("Insert company data into DB:" + companyPOJOList.size() + " records are going to insert");
         for (CompanyPOJO companyPOJO : companyPOJOList) {
             iCompanyDao.insertCompanyData(companyPOJO);
         }
@@ -143,10 +148,11 @@ public class FetchDataService implements IFetchDataService {
     private String dealerUrl;
     @Autowired
     private IDealerDao iDealerDao;
+
     @Override
     public void insertDealer(List<DealerPOJO> dealerPOJOList) {
         iDealerDao.truncate();
-        logger.info("Insert dealer data into DB:"+dealerPOJOList.size()+" records are going to insert");
+        logger.info("Insert dealer data into DB:" + dealerPOJOList.size() + " records are going to insert");
         for (DealerPOJO dealerPOJO : dealerPOJOList) {
             iDealerDao.insertDealerData(dealerPOJO);
         }
@@ -156,12 +162,13 @@ public class FetchDataService implements IFetchDataService {
     private String dealerAccountUrl;
     @Autowired
     private DealeraccountMapper dealeraccountMapper;
+
     @Override
     public void insertDealerAccount(List<Dealeraccount> dealeraccounts) {
         List<List<Dealeraccount>> dealerAccountBranch = getBranchFromList(dealeraccounts);
         int branchTotal = dealerAccountBranch.size();
         dealeraccountMapper.truncate();
-        logger.info("Insert DealerAccount data into DB:"+dealeraccounts.size()+" records are going to insert");
+        logger.info("Insert DealerAccount data into DB:" + dealeraccounts.size() + " records are going to insert");
         for (int i = 0; i <= 9; i++) {
             int remain = i;
             new Thread(new Runnable() {
@@ -181,10 +188,11 @@ public class FetchDataService implements IFetchDataService {
     private String dealerFormatUrl;
     @Autowired
     private DealerformatMapper dealerformatMapper;
+
     @Override
     public void insertDealerFormat(List<Dealerformat> dealerformats) {
         dealerformatMapper.truncate();
-        logger.info("Insert DealerFormat data into DB:"+dealerformats.size()+" records are going to insert");
+        logger.info("Insert DealerFormat data into DB:" + dealerformats.size() + " records are going to insert");
         for (Dealerformat dealerformat : dealerformats) {
             dealerformatMapper.insert(dealerformat);
         }
@@ -194,10 +202,11 @@ public class FetchDataService implements IFetchDataService {
     private String dealerFormatCodeUrl;
     @Autowired
     private DealerformatcodeMapper dealerformatcodeMapper;
+
     @Override
     public void insertDealerFormatCode(List<Dealerformatcode> dealerformatcodes) {
         dealerformatcodeMapper.truncate();
-        logger.info("Insert DealerFormat data into DB:"+dealerformatcodes.size()+" records are going to insert");
+        logger.info("Insert DealerFormat data into DB:" + dealerformatcodes.size() + " records are going to insert");
         for (Dealerformatcode dealerformatcode : dealerformatcodes) {
             dealerformatcodeMapper.insert(dealerformatcode);
         }
@@ -207,10 +216,11 @@ public class FetchDataService implements IFetchDataService {
     private String dealerGroupUrl;
     @Autowired
     private DealergroupMapper dealergroupMapper;
+
     @Override
     public void insertDealerGroup(List<Dealergroup> dealergroups) {
         dealergroupMapper.truncate();
-        logger.info("Insert DealerGroup data into DB:"+dealergroups.size()+" records are going to insert");
+        logger.info("Insert DealerGroup data into DB:" + dealergroups.size() + " records are going to insert");
         for (Dealergroup dealergroup : dealergroups) {
             dealergroupMapper.insert(dealergroup);
         }
@@ -220,10 +230,11 @@ public class FetchDataService implements IFetchDataService {
     private String dealerOwnerUrl;
     @Autowired
     private DealerownerMapper dealerownerMapper;
+
     @Override
     public void insertDealerOwner(List<Dealerowner> dealerowners) {
         dealerownerMapper.truncate();
-        logger.info("Insert dealerowner data into DB:"+dealerowners.size()+" records are going to insert");
+        logger.info("Insert dealerowner data into DB:" + dealerowners.size() + " records are going to insert");
         for (Dealerowner dealerowner : dealerowners) {
             dealerownerMapper.insert(dealerowner);
         }
@@ -233,10 +244,11 @@ public class FetchDataService implements IFetchDataService {
     private String dimissionReasonUrl;
     @Autowired
     private DimissionreasonMapper dimissionreasonMapper;
+
     @Override
     public void insertDimissionReason(List<Dimissionreason> dimissionreasons) {
         dimissionreasonMapper.truncate();
-        logger.info("Insert dimissionReason data into DB:"+dimissionreasons.size()+" records are going to insert");
+        logger.info("Insert dimissionReason data into DB:" + dimissionreasons.size() + " records are going to insert");
         for (Dimissionreason dimissionreason : dimissionreasons) {
             dimissionreasonMapper.insert(dimissionreason);
         }
@@ -246,12 +258,13 @@ public class FetchDataService implements IFetchDataService {
     private String oChartUrl;
     @Autowired
     private OchartMapper ochartMapper;
+
     @Override
     public void insertOChart(List<Ochart> ocharts) {
         List<List<Ochart>> ochartBranch = getBranchFromList(ocharts);
         int branchTotal = ochartBranch.size();
         ochartMapper.truncate();
-        logger.info("Insert Ochart data into DB:"+ocharts.size()+" records are going to insert");
+        logger.info("Insert Ochart data into DB:" + ocharts.size() + " records are going to insert");
         for (int i = 0; i <= 9; i++) {
             int remain = i;
             new Thread(new Runnable() {
@@ -271,10 +284,11 @@ public class FetchDataService implements IFetchDataService {
     private String oChartCustomUrl;
     @Autowired
     private OchartcustomMapper ochartcustomMapper;
+
     @Override
     public void insertOChartCustom(List<Ochartcustom> ochartcustoms) {
         ochartcustomMapper.truncate();
-        logger.info("Insert OchartCUstom data into DB:"+ochartcustoms.size()+" records are going to insert");
+        logger.info("Insert OchartCUstom data into DB:" + ochartcustoms.size() + " records are going to insert");
         for (Ochartcustom ochartcustom : ochartcustoms) {
             ochartcustomMapper.insert(ochartcustom);
         }
@@ -284,10 +298,11 @@ public class FetchDataService implements IFetchDataService {
     private String provinceUrl;
     @Autowired
     private ProvinceMapper provinceMapper;
+
     @Override
     public void insertProvince(List<Province> provinces) {
         provinceMapper.truncate();
-        logger.info("Insert province data into DB:"+provinces.size()+" records are going to insert");
+        logger.info("Insert province data into DB:" + provinces.size() + " records are going to insert");
         for (Province province : provinces) {
             provinceMapper.insert(province);
         }
@@ -297,10 +312,11 @@ public class FetchDataService implements IFetchDataService {
     private String qualificationUrl;
     @Autowired
     private QualificationMapper qualificationMapper;
+
     @Override
     public void insertQualification(List<Qualification> qualifications) {
         qualificationMapper.truncate();
-        logger.info("Insert qualification data into DB:"+qualifications.size()+" records are going to insert");
+        logger.info("Insert qualification data into DB:" + qualifications.size() + " records are going to insert");
         for (Qualification qualification : qualifications) {
             qualificationMapper.insert(qualification);
         }
@@ -310,10 +326,11 @@ public class FetchDataService implements IFetchDataService {
     private String staffPositionTypeUrl;
     @Autowired
     private StaffpositiontypeMapper staffpositiontypeMapper;
+
     @Override
     public void insertStaffPositionType(List<Staffpositiontype> staffpositiontypes) {
         staffpositiontypeMapper.truncate();
-        logger.info("Insert staffPositionType data into DB:"+staffpositiontypes.size()+" records are going to insert");
+        logger.info("Insert staffPositionType data into DB:" + staffpositiontypes.size() + " records are going to insert");
         for (Staffpositiontype staffpositiontype : staffpositiontypes) {
             staffpositiontypeMapper.insert(staffpositiontype);
         }
@@ -323,12 +340,13 @@ public class FetchDataService implements IFetchDataService {
     private String staffResumeUrl;
     @Autowired
     private StaffresumeMapper staffresumeMapper;
+
     @Override
     public void insertStaffResume(List<Staffresume> staffresumes) {
         List<List<Staffresume>> staffResumeBranch = getBranchFromList(staffresumes);
         int branchTotal = staffResumeBranch.size();
         staffresumeMapper.truncate();
-        logger.info("Insert staffResume data into DB:"+staffresumes.size()+" records are going to insert");
+        logger.info("Insert staffResume data into DB:" + staffresumes.size() + " records are going to insert");
         for (int i = 0; i <= 9; i++) {
             int remain = i;
             new Thread(new Runnable() {
@@ -348,12 +366,13 @@ public class FetchDataService implements IFetchDataService {
     private String userInfoUrl;
     @Autowired
     private UserinfoMapper userinfoMapper;
+
     @Override
     public void insertUserInfo(List<Userinfo> userinfos) {
         List<List<Userinfo>> userinfoBranch = getBranchFromList(userinfos);
         int branchTotal = userinfoBranch.size();
         userinfoMapper.truncate();
-        logger.info("Insert UserInfo data into DB:"+userinfos.size()+" records are going to insert");
+        logger.info("Insert UserInfo data into DB:" + userinfos.size() + " records are going to insert");
         for (int i = 0; i <= 9; i++) {
             int remain = i;
             new Thread(new Runnable() {
@@ -373,10 +392,11 @@ public class FetchDataService implements IFetchDataService {
     private String regionUrl;
     @Autowired
     private RegionMapper regionMapper;
+
     @Override
     public void insertRegion(List<Region> regions) {
         regionMapper.truncate();
-        logger.info("Insert region data into DB:"+regions.size()+" records are going to insert");
+        logger.info("Insert region data into DB:" + regions.size() + " records are going to insert");
         for (Region region : regions) {
             regionMapper.insert(region);
         }
@@ -386,12 +406,64 @@ public class FetchDataService implements IFetchDataService {
     private String relation_RegionUrl;
     @Autowired
     private RelationRegionprovinceMapper relationRegionprovinceMapper;
+
     @Override
     public void insertRelation_RegionProvience(List<RelationRegionprovince> relationRegionprovinces) {
         relationRegionprovinceMapper.truncate();
-        logger.info("Insert RegionProvince data into DB:"+relationRegionprovinces.size()+" records are going to inesrt");
+        logger.info("Insert RegionProvince data into DB:" + relationRegionprovinces.size() + " records are going to inesrt");
         for (RelationRegionprovince relationRegionprovince : relationRegionprovinces) {
             relationRegionprovinceMapper.insert(relationRegionprovince);
+        }
+    }
+
+    @Value("${dic.api.url.Relation_AccountPosition}")
+    private String relation_AccountUrl;
+    @Autowired
+    private RelationAccountPositionMapper relationAccountPositionMapper;
+
+    @Override
+    public void insertRelation_AccountPosition(List<RelationAccountPositionPOJO> relationAccountPositionPOJOS) {
+        List<List<RelationAccountPositionPOJO>> positionBranch = getBranchFromList(relationAccountPositionPOJOS);
+        int branchTotal = positionBranch.size();
+        relationAccountPositionMapper.truncate();
+        logger.info("Insert relationAccountPosition data into DB:" + relationAccountPositionPOJOS.size() + " records are going to insert");
+        for (int i = 0; i <= 9; i++) {
+            int remain = i;
+            new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    int j = remain;
+                    while (j < branchTotal) {
+                        relationAccountPositionMapper.insertList(positionBranch.get(j));
+                        j += 10;
+                    }
+                }
+            }).start();
+        }
+    }
+
+    @Value("${dic.api.url.OchartDealerDepart}")
+    private String ochartDealerDepartUrl;
+    @Autowired
+    private OchartDealerDepartMapper ochartDealerDepartMapper;
+
+    public void insertOchartDealerDepart(List<OchartDealerDepart> ochartDealerDeparts) {
+        List<List<OchartDealerDepart>> dealerDeparts = getBranchFromList(ochartDealerDeparts);
+        int branchTotal = dealerDeparts.size();
+        ochartDealerDepartMapper.truncate();
+        logger.info("Insert ochartDealerDeparts data into DB:" + ochartDealerDeparts.size() + " records are going to insert");
+        for (int i = 0; i <= 9; i++) {
+            int remain = i;
+            new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    int j = remain;
+                    while (j < branchTotal) {
+                        ochartDealerDepartMapper.insertList(dealerDeparts.get(j));
+                        j += 10;
+                    }
+                }
+            }).start();
         }
     }
 
@@ -565,6 +637,20 @@ public class FetchDataService implements IFetchDataService {
         }else{
             logger.info("Fetch RegionProvince data succeed");
         }
+        List<RelationAccountPositionPOJO> relationAccountPositionPOJOS = fetchObjectFromApi(relation_AccountUrl, RelationAccountPositionPOJO.class);
+        if(relationAccountPositionPOJOS==null){
+            logger.error("Fetch AccountPosition data failed");
+            return;
+        }else{
+            logger.info("Fetch AccountPosition data succeed");
+        }
+        List<OchartDealerDepart> ochartDealerDeparts = fetchObjectFromApi(ochartDealerDepartUrl, OchartDealerDepart.class);
+        if (ochartDealerDeparts == null) {
+            logger.error("Fetch ochartDealerDeparts data failed");
+            return;
+        } else {
+            logger.info("Fetch ochartDealerDeparts data succeed");
+        }
         //插入数据库
         insertBrand(brandList);
         insertCertification(certificationPOJOList);
@@ -587,6 +673,8 @@ public class FetchDataService implements IFetchDataService {
         insertUserInfo(userinfos);
         insertRegion(regions);
         insertRelation_RegionProvience(relationRegionprovinces);
+        insertRelation_AccountPosition(relationAccountPositionPOJOS);
+        insertOchartDealerDepart(ochartDealerDeparts);
     }
 
     /**
@@ -607,12 +695,12 @@ public class FetchDataService implements IFetchDataService {
             String json = DecodeUtil.decode(base64, loginInfo.getKey());
             Map<String, List<Object>> resultMap = JsonUtil.getMapFromJson(json);
             list.addAll(GenerateListFromMapUtil.generateList(resultMap.get("Key"), resultMap.get("Data"), destObj));
-            logger.info(i+"/"+page+" records has been fetched");
+            logger.info(i + "/" + page + " records has been fetched");
         }
-        if(list.size()>=totalCount){
-            logger.info(list.size()+" records are fetched actually");
+        if (list.size() >= totalCount) {
+            logger.info(list.size() + " records are fetched actually");
             return list;
-        }else{
+        } else {
             System.out.println(list.size());
             return null;
         }

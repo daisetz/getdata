@@ -30,6 +30,7 @@ public interface IFetchDataService {
     void insertUserInfo(List<Userinfo> userinfos);
     void insertRegion(List<Region> regions);
     void insertRelation_RegionProvience(List<RelationRegionprovince> relationRegionprovinces);
+    void insertRelation_AccountPosition(List<RelationAccountPositionPOJO> relationAccountPositionPOJOS);
 
     void fetchDataManager();
 

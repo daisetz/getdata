@@ -18,7 +18,7 @@
   <insert id="insertList" parameterType="java.util.List">
     insert into OChart (OChartID, CompanyID, DealerID,
     ParentID, NameCn, NameEn,
-    DescriptionCn, DescriptionEn, Sort
+    DescriptionCn, DescriptionEn, Sort, OChartStandardID, NodeCategory
     )
     values
     <foreach collection="list" item="com.daimler.aftersales.entity.Ochart" index="index" separator=",">
@@ -30,7 +30,9 @@
       #{com.daimler.aftersales.entity.Ochart.nameen,jdbcType=NVARCHAR},
     #{com.daimler.aftersales.entity.Ochart.descriptioncn,jdbcType=NVARCHAR},
       #{com.daimler.aftersales.entity.Ochart.descriptionen,jdbcType=NVARCHAR},
-      #{com.daimler.aftersales.entity.Ochart.sort,jdbcType=INTEGER}
+      #{com.daimler.aftersales.entity.Ochart.sort,jdbcType=INTEGER},
+      #{com.daimler.aftersales.entity.Ochart.ochartstandardid,jdbcType=INTEGER},
+      #{com.daimler.aftersales.entity.Ochart.nodecategory,jdbcType=INTEGER}
     )
     </foreach>
   </insert>

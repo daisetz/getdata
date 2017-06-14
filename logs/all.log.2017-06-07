@@ -1,0 +1,1159 @@
+2017-06-07 14:43:54,737  INFO GetdataApplication:48 - Starting GetdataApplication on DESKTOP-C9U0JSN with PID 13064 (C:\Users\zhuyuchao\IdeaProjects\getdata\target\classes started by zhuyuchao in C:\Users\zhuyuchao\IdeaProjects\getdata)
+2017-06-07 14:43:54,753  INFO GetdataApplication:641 - The following profiles are active: dev
+2017-06-07 14:43:54,878  INFO AnnotationConfigEmbeddedWebApplicationContext:582 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4ae82894: startup date [Wed Jun 07 14:43:54 CST 2017]; root of context hierarchy
+2017-06-07 14:43:55,909  INFO Version:30 - HV000001: Hibernate Validator 5.3.4.Final
+2017-06-07 14:43:59,036  INFO AutowiredAnnotationBeanPostProcessor:155 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-06-07 14:43:59,235  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:325 - Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-06-07 14:43:59,425  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:325 - Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-06-07 14:43:59,504  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:325 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$56e90ef9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-06-07 14:44:00,630  INFO TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 12345 (http)
+2017-06-07 14:44:00,866  INFO ContextLoader:276 - Root WebApplicationContext: initialization completed in 5988 ms
+2017-06-07 14:44:02,014  INFO ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-06-07 14:44:02,030  INFO ServletRegistrationBean:190 - Mapping servlet: 'com.daimler.aftersales.servlet.DruidStatViewServlet' to [/druid/*]
+2017-06-07 14:44:02,030  INFO FilterRegistrationBean:258 - Mapping filter: 'metricsFilter' to: [/*]
+2017-06-07 14:44:02,030  INFO FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-06-07 14:44:02,045  INFO FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-06-07 14:44:02,045  INFO FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-06-07 14:44:02,045  INFO FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2017-06-07 14:44:02,045  INFO FilterRegistrationBean:258 - Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2017-06-07 14:44:02,045  INFO FilterRegistrationBean:271 - Mapping filter: 'druidWebStatFilter' to urls: [/*]
+2017-06-07 14:44:02,045  INFO FilterRegistrationBean:258 - Mapping filter: 'applicationContextIdFilter' to: [/*]
+2017-06-07 14:44:03,143 DEBUG LogFactory:54 - Logging initialized using 'class org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2017-06-07 14:44:03,231 DEBUG VFS:54 - Using VFS adapter org.mybatis.spring.boot.autoconfigure.SpringBootVFS
+2017-06-07 14:44:03,247 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.BrandPOJO matches criteria [is assignable to Object]
+2017-06-07 14:44:03,247 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.CertificationPOJO matches criteria [is assignable to Object]
+2017-06-07 14:44:03,247 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.CityPOJO matches criteria [is assignable to Object]
+2017-06-07 14:44:03,247 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.CMSAccountPOJO matches criteria [is assignable to Object]
+2017-06-07 14:44:03,247 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.CompanyPOJO matches criteria [is assignable to Object]
+2017-06-07 14:44:03,247 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.Dealeraccount matches criteria [is assignable to Object]
+2017-06-07 14:44:03,247 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.DealeraccountExample$Criteria matches criteria [is assignable to Object]
+2017-06-07 14:44:03,247 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.DealeraccountExample$Criterion matches criteria [is assignable to Object]
+2017-06-07 14:44:03,262 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.DealeraccountExample$GeneratedCriteria matches criteria [is assignable to Object]
+2017-06-07 14:44:03,262 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.DealeraccountExample matches criteria [is assignable to Object]
+2017-06-07 14:44:03,262 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.Dealerformat matches criteria [is assignable to Object]
+2017-06-07 14:44:03,262 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.Dealerformatcode matches criteria [is assignable to Object]
+2017-06-07 14:44:03,262 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.DealerformatcodeExample$Criteria matches criteria [is assignable to Object]
+2017-06-07 14:44:03,262 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.DealerformatcodeExample$Criterion matches criteria [is assignable to Object]
+2017-06-07 14:44:03,262 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.DealerformatcodeExample$GeneratedCriteria matches criteria [is assignable to Object]
+2017-06-07 14:44:03,262 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.DealerformatcodeExample matches criteria [is assignable to Object]
+2017-06-07 14:44:03,262 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.DealerformatExample$Criteria matches criteria [is assignable to Object]
+2017-06-07 14:44:03,262 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.DealerformatExample$Criterion matches criteria [is assignable to Object]
+2017-06-07 14:44:03,262 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.DealerformatExample$GeneratedCriteria matches criteria [is assignable to Object]
+2017-06-07 14:44:03,262 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.DealerformatExample matches criteria [is assignable to Object]
+2017-06-07 14:44:03,262 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.Dealergroup matches criteria [is assignable to Object]
+2017-06-07 14:44:03,262 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.DealergroupExample$Criteria matches criteria [is assignable to Object]
+2017-06-07 14:44:03,262 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.DealergroupExample$Criterion matches criteria [is assignable to Object]
+2017-06-07 14:44:03,262 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.DealergroupExample$GeneratedCriteria matches criteria [is assignable to Object]
+2017-06-07 14:44:03,278 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.DealergroupExample matches criteria [is assignable to Object]
+2017-06-07 14:44:03,278 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.Dealerowner matches criteria [is assignable to Object]
+2017-06-07 14:44:03,278 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.DealerownerExample$Criteria matches criteria [is assignable to Object]
+2017-06-07 14:44:03,278 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.DealerownerExample$Criterion matches criteria [is assignable to Object]
+2017-06-07 14:44:03,278 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.DealerownerExample$GeneratedCriteria matches criteria [is assignable to Object]
+2017-06-07 14:44:03,278 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.DealerownerExample matches criteria [is assignable to Object]
+2017-06-07 14:44:03,278 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.DealerPOJO matches criteria [is assignable to Object]
+2017-06-07 14:44:03,278 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.Dimissionreason matches criteria [is assignable to Object]
+2017-06-07 14:44:03,278 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.DimissionreasonExample$Criteria matches criteria [is assignable to Object]
+2017-06-07 14:44:03,278 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.DimissionreasonExample$Criterion matches criteria [is assignable to Object]
+2017-06-07 14:44:03,278 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.DimissionreasonExample$GeneratedCriteria matches criteria [is assignable to Object]
+2017-06-07 14:44:03,278 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.DimissionreasonExample matches criteria [is assignable to Object]
+2017-06-07 14:44:03,278 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.LoginInfo matches criteria [is assignable to Object]
+2017-06-07 14:44:03,278 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.Ochart matches criteria [is assignable to Object]
+2017-06-07 14:44:03,278 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.Ochartcustom matches criteria [is assignable to Object]
+2017-06-07 14:44:03,278 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.OchartcustomExample$Criteria matches criteria [is assignable to Object]
+2017-06-07 14:44:03,278 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.OchartcustomExample$Criterion matches criteria [is assignable to Object]
+2017-06-07 14:44:03,294 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.OchartcustomExample$GeneratedCriteria matches criteria [is assignable to Object]
+2017-06-07 14:44:03,294 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.OchartcustomExample matches criteria [is assignable to Object]
+2017-06-07 14:44:03,294 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.OchartExample$Criteria matches criteria [is assignable to Object]
+2017-06-07 14:44:03,294 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.OchartExample$Criterion matches criteria [is assignable to Object]
+2017-06-07 14:44:03,294 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.OchartExample$GeneratedCriteria matches criteria [is assignable to Object]
+2017-06-07 14:44:03,294 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.OchartExample matches criteria [is assignable to Object]
+2017-06-07 14:44:03,294 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.Province matches criteria [is assignable to Object]
+2017-06-07 14:44:03,294 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.ProvinceExample$Criteria matches criteria [is assignable to Object]
+2017-06-07 14:44:03,294 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.ProvinceExample$Criterion matches criteria [is assignable to Object]
+2017-06-07 14:44:03,294 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.ProvinceExample$GeneratedCriteria matches criteria [is assignable to Object]
+2017-06-07 14:44:03,294 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.ProvinceExample matches criteria [is assignable to Object]
+2017-06-07 14:44:03,294 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.Qualification matches criteria [is assignable to Object]
+2017-06-07 14:44:03,294 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.QualificationExample$Criteria matches criteria [is assignable to Object]
+2017-06-07 14:44:03,294 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.QualificationExample$Criterion matches criteria [is assignable to Object]
+2017-06-07 14:44:03,294 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.QualificationExample$GeneratedCriteria matches criteria [is assignable to Object]
+2017-06-07 14:44:03,294 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.QualificationExample matches criteria [is assignable to Object]
+2017-06-07 14:44:03,294 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.Region matches criteria [is assignable to Object]
+2017-06-07 14:44:03,294 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.RegionExample$Criteria matches criteria [is assignable to Object]
+2017-06-07 14:44:03,309 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.RegionExample$Criterion matches criteria [is assignable to Object]
+2017-06-07 14:44:03,309 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.RegionExample$GeneratedCriteria matches criteria [is assignable to Object]
+2017-06-07 14:44:03,309 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.RegionExample matches criteria [is assignable to Object]
+2017-06-07 14:44:03,309 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.RelationRegionprovince matches criteria [is assignable to Object]
+2017-06-07 14:44:03,309 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.RelationRegionprovinceExample$Criteria matches criteria [is assignable to Object]
+2017-06-07 14:44:03,309 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.RelationRegionprovinceExample$Criterion matches criteria [is assignable to Object]
+2017-06-07 14:44:03,309 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.RelationRegionprovinceExample$GeneratedCriteria matches criteria [is assignable to Object]
+2017-06-07 14:44:03,309 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.RelationRegionprovinceExample matches criteria [is assignable to Object]
+2017-06-07 14:44:03,309 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.Staffpositiontype matches criteria [is assignable to Object]
+2017-06-07 14:44:03,309 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.StaffpositiontypeExample$Criteria matches criteria [is assignable to Object]
+2017-06-07 14:44:03,309 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.StaffpositiontypeExample$Criterion matches criteria [is assignable to Object]
+2017-06-07 14:44:03,309 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.StaffpositiontypeExample$GeneratedCriteria matches criteria [is assignable to Object]
+2017-06-07 14:44:03,309 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.StaffpositiontypeExample matches criteria [is assignable to Object]
+2017-06-07 14:44:03,309 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.Staffresume matches criteria [is assignable to Object]
+2017-06-07 14:44:03,309 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.StaffresumeExample$Criteria matches criteria [is assignable to Object]
+2017-06-07 14:44:03,309 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.StaffresumeExample$Criterion matches criteria [is assignable to Object]
+2017-06-07 14:44:03,309 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.StaffresumeExample$GeneratedCriteria matches criteria [is assignable to Object]
+2017-06-07 14:44:03,309 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.StaffresumeExample matches criteria [is assignable to Object]
+2017-06-07 14:44:03,309 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.Userinfo matches criteria [is assignable to Object]
+2017-06-07 14:44:03,309 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.UserinfoExample$Criteria matches criteria [is assignable to Object]
+2017-06-07 14:44:03,325 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.UserinfoExample$Criterion matches criteria [is assignable to Object]
+2017-06-07 14:44:03,325 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.UserinfoExample$GeneratedCriteria matches criteria [is assignable to Object]
+2017-06-07 14:44:03,325 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.UserinfoExample matches criteria [is assignable to Object]
+2017-06-07 14:44:05,161  INFO RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4ae82894: startup date [Wed Jun 07 14:43:54 CST 2017]; root of context hierarchy
+2017-06-07 14:44:05,262  INFO RequestMappingHandlerMapping:543 - Mapped "{[/login]}" onto public java.lang.String com.daimler.aftersales.controller.TriggerController.loginTest()
+2017-06-07 14:44:05,262  INFO RequestMappingHandlerMapping:543 - Mapped "{[/fetch]}" onto public java.lang.String com.daimler.aftersales.controller.TriggerController.triggerTasks()
+2017-06-07 14:44:05,262  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-06-07 14:44:05,262  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-06-07 14:44:05,309  INFO SimpleUrlHandlerMapping:354 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-06-07 14:44:05,309  INFO SimpleUrlHandlerMapping:354 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-06-07 14:44:05,354  INFO SimpleUrlHandlerMapping:354 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-06-07 14:44:05,981  INFO EndpointHandlerMapping:543 - Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2017-06-07 14:44:05,981  INFO EndpointHandlerMapping:543 - Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest)
+2017-06-07 14:44:05,981  INFO EndpointHandlerMapping:543 - Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-06-07 14:44:05,981  INFO EndpointHandlerMapping:543 - Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-06-07 14:44:05,999  INFO EndpointHandlerMapping:543 - Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-06-07 14:44:06,000  INFO EndpointHandlerMapping:543 - Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-06-07 14:44:06,003  INFO EndpointHandlerMapping:543 - Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-06-07 14:44:06,007  INFO EndpointHandlerMapping:543 - Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2017-06-07 14:44:06,008  INFO EndpointHandlerMapping:543 - Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-06-07 14:44:06,009  INFO EndpointHandlerMapping:543 - Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2017-06-07 14:44:06,013  INFO EndpointHandlerMapping:543 - Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2017-06-07 14:44:06,014  INFO EndpointHandlerMapping:543 - Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2017-06-07 14:44:06,014  INFO EndpointHandlerMapping:543 - Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-06-07 14:44:06,017  INFO EndpointHandlerMapping:543 - Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-06-07 14:44:06,024  INFO EndpointHandlerMapping:543 - Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2017-06-07 14:44:06,026  INFO EndpointHandlerMapping:543 - Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-06-07 14:44:06,044  INFO EndpointHandlerMapping:543 - Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-06-07 14:44:06,370  INFO AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-06-07 14:44:06,370  INFO AnnotationMBeanExporter:916 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2017-06-07 14:44:06,386  INFO AnnotationMBeanExporter:671 - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2017-06-07 14:44:06,386  INFO EndpointMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-06-07 14:44:06,386  INFO DefaultLifecycleProcessor:341 - Starting beans in phase 0
+2017-06-07 14:44:06,386  INFO EndpointMBeanExporter:678 - Located managed bean 'auditEventsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=auditEventsEndpoint]
+2017-06-07 14:44:06,402  INFO EndpointMBeanExporter:678 - Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+2017-06-07 14:44:06,417  INFO EndpointMBeanExporter:678 - Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+2017-06-07 14:44:06,433  INFO EndpointMBeanExporter:678 - Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+2017-06-07 14:44:06,433  INFO EndpointMBeanExporter:678 - Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+2017-06-07 14:44:06,433  INFO EndpointMBeanExporter:678 - Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+2017-06-07 14:44:06,433  INFO EndpointMBeanExporter:678 - Located managed bean 'loggersEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=loggersEndpoint]
+2017-06-07 14:44:06,449  INFO EndpointMBeanExporter:678 - Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+2017-06-07 14:44:06,449  INFO EndpointMBeanExporter:678 - Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+2017-06-07 14:44:06,449  INFO EndpointMBeanExporter:678 - Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+2017-06-07 14:44:06,464  INFO EndpointMBeanExporter:678 - Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
+2017-06-07 14:44:06,464  INFO EndpointMBeanExporter:678 - Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+2017-06-07 14:44:06,480  INFO ScheduledAnnotationBeanPostProcessor:260 - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2017-06-07 14:44:06,558  INFO TomcatEmbeddedServletContainer:192 - Tomcat started on port(s): 12345 (http)
+2017-06-07 14:44:06,574  INFO GetdataApplication:57 - Started GetdataApplication in 12.352 seconds (JVM running for 13.087)
+2017-06-07 14:48:04,449  INFO GetdataApplication:48 - Starting GetdataApplication on DESKTOP-C9U0JSN with PID 7004 (C:\Users\zhuyuchao\IdeaProjects\getdata\target\classes started by zhuyuchao in C:\Users\zhuyuchao\IdeaProjects\getdata)
+2017-06-07 14:48:04,449  INFO GetdataApplication:641 - The following profiles are active: dev
+2017-06-07 14:48:04,595  INFO AnnotationConfigEmbeddedWebApplicationContext:582 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4ae82894: startup date [Wed Jun 07 14:48:04 CST 2017]; root of context hierarchy
+2017-06-07 14:48:06,226  INFO Version:30 - HV000001: Hibernate Validator 5.3.4.Final
+2017-06-07 14:48:07,622  INFO AutowiredAnnotationBeanPostProcessor:155 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-06-07 14:48:07,762  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:325 - Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-06-07 14:48:07,918  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:325 - Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-06-07 14:48:07,965  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:325 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1c6bde5b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-06-07 14:48:08,590  INFO TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 12345 (http)
+2017-06-07 14:48:08,793  INFO ContextLoader:276 - Root WebApplicationContext: initialization completed in 4198 ms
+2017-06-07 14:48:09,309  INFO ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-06-07 14:48:09,309  INFO ServletRegistrationBean:190 - Mapping servlet: 'com.daimler.aftersales.servlet.DruidStatViewServlet' to [/druid/*]
+2017-06-07 14:48:09,325  INFO FilterRegistrationBean:258 - Mapping filter: 'metricsFilter' to: [/*]
+2017-06-07 14:48:09,325  INFO FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-06-07 14:48:09,325  INFO FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-06-07 14:48:09,325  INFO FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-06-07 14:48:09,325  INFO FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2017-06-07 14:48:09,325  INFO FilterRegistrationBean:258 - Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2017-06-07 14:48:09,325  INFO FilterRegistrationBean:271 - Mapping filter: 'druidWebStatFilter' to urls: [/*]
+2017-06-07 14:48:09,325  INFO FilterRegistrationBean:258 - Mapping filter: 'applicationContextIdFilter' to: [/*]
+2017-06-07 14:48:09,794 DEBUG LogFactory:54 - Logging initialized using 'class org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2017-06-07 14:48:09,860 DEBUG VFS:54 - Using VFS adapter org.mybatis.spring.boot.autoconfigure.SpringBootVFS
+2017-06-07 14:48:09,892 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.BrandPOJO matches criteria [is assignable to Object]
+2017-06-07 14:48:09,892 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.CertificationPOJO matches criteria [is assignable to Object]
+2017-06-07 14:48:09,892 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.CityPOJO matches criteria [is assignable to Object]
+2017-06-07 14:48:09,892 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.CMSAccountPOJO matches criteria [is assignable to Object]
+2017-06-07 14:48:09,892 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.CompanyPOJO matches criteria [is assignable to Object]
+2017-06-07 14:48:09,892 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.Dealeraccount matches criteria [is assignable to Object]
+2017-06-07 14:48:09,892 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.DealeraccountExample$Criteria matches criteria [is assignable to Object]
+2017-06-07 14:48:09,892 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.DealeraccountExample$Criterion matches criteria [is assignable to Object]
+2017-06-07 14:48:09,892 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.DealeraccountExample$GeneratedCriteria matches criteria [is assignable to Object]
+2017-06-07 14:48:09,892 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.DealeraccountExample matches criteria [is assignable to Object]
+2017-06-07 14:48:09,892 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.Dealerformat matches criteria [is assignable to Object]
+2017-06-07 14:48:09,892 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.Dealerformatcode matches criteria [is assignable to Object]
+2017-06-07 14:48:09,892 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.DealerformatcodeExample$Criteria matches criteria [is assignable to Object]
+2017-06-07 14:48:09,907 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.DealerformatcodeExample$Criterion matches criteria [is assignable to Object]
+2017-06-07 14:48:09,907 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.DealerformatcodeExample$GeneratedCriteria matches criteria [is assignable to Object]
+2017-06-07 14:48:09,907 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.DealerformatcodeExample matches criteria [is assignable to Object]
+2017-06-07 14:48:09,907 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.DealerformatExample$Criteria matches criteria [is assignable to Object]
+2017-06-07 14:48:09,907 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.DealerformatExample$Criterion matches criteria [is assignable to Object]
+2017-06-07 14:48:09,907 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.DealerformatExample$GeneratedCriteria matches criteria [is assignable to Object]
+2017-06-07 14:48:09,907 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.DealerformatExample matches criteria [is assignable to Object]
+2017-06-07 14:48:09,907 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.Dealergroup matches criteria [is assignable to Object]
+2017-06-07 14:48:09,907 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.DealergroupExample$Criteria matches criteria [is assignable to Object]
+2017-06-07 14:48:09,907 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.DealergroupExample$Criterion matches criteria [is assignable to Object]
+2017-06-07 14:48:09,907 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.DealergroupExample$GeneratedCriteria matches criteria [is assignable to Object]
+2017-06-07 14:48:09,907 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.DealergroupExample matches criteria [is assignable to Object]
+2017-06-07 14:48:09,907 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.Dealerowner matches criteria [is assignable to Object]
+2017-06-07 14:48:09,907 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.DealerownerExample$Criteria matches criteria [is assignable to Object]
+2017-06-07 14:48:09,923 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.DealerownerExample$Criterion matches criteria [is assignable to Object]
+2017-06-07 14:48:09,923 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.DealerownerExample$GeneratedCriteria matches criteria [is assignable to Object]
+2017-06-07 14:48:09,923 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.DealerownerExample matches criteria [is assignable to Object]
+2017-06-07 14:48:09,923 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.DealerPOJO matches criteria [is assignable to Object]
+2017-06-07 14:48:09,923 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.Dimissionreason matches criteria [is assignable to Object]
+2017-06-07 14:48:09,923 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.DimissionreasonExample$Criteria matches criteria [is assignable to Object]
+2017-06-07 14:48:09,923 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.DimissionreasonExample$Criterion matches criteria [is assignable to Object]
+2017-06-07 14:48:09,923 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.DimissionreasonExample$GeneratedCriteria matches criteria [is assignable to Object]
+2017-06-07 14:48:09,923 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.DimissionreasonExample matches criteria [is assignable to Object]
+2017-06-07 14:48:09,923 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.LoginInfo matches criteria [is assignable to Object]
+2017-06-07 14:48:09,923 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.Ochart matches criteria [is assignable to Object]
+2017-06-07 14:48:09,923 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.Ochartcustom matches criteria [is assignable to Object]
+2017-06-07 14:48:09,923 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.OchartcustomExample$Criteria matches criteria [is assignable to Object]
+2017-06-07 14:48:09,938 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.OchartcustomExample$Criterion matches criteria [is assignable to Object]
+2017-06-07 14:48:09,938 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.OchartcustomExample$GeneratedCriteria matches criteria [is assignable to Object]
+2017-06-07 14:48:09,938 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.OchartcustomExample matches criteria [is assignable to Object]
+2017-06-07 14:48:09,938 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.OchartExample$Criteria matches criteria [is assignable to Object]
+2017-06-07 14:48:09,938 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.OchartExample$Criterion matches criteria [is assignable to Object]
+2017-06-07 14:48:09,938 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.OchartExample$GeneratedCriteria matches criteria [is assignable to Object]
+2017-06-07 14:48:09,938 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.OchartExample matches criteria [is assignable to Object]
+2017-06-07 14:48:09,938 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.Province matches criteria [is assignable to Object]
+2017-06-07 14:48:09,938 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.ProvinceExample$Criteria matches criteria [is assignable to Object]
+2017-06-07 14:48:09,938 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.ProvinceExample$Criterion matches criteria [is assignable to Object]
+2017-06-07 14:48:09,938 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.ProvinceExample$GeneratedCriteria matches criteria [is assignable to Object]
+2017-06-07 14:48:09,938 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.ProvinceExample matches criteria [is assignable to Object]
+2017-06-07 14:48:09,938 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.Qualification matches criteria [is assignable to Object]
+2017-06-07 14:48:09,938 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.QualificationExample$Criteria matches criteria [is assignable to Object]
+2017-06-07 14:48:09,938 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.QualificationExample$Criterion matches criteria [is assignable to Object]
+2017-06-07 14:48:09,938 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.QualificationExample$GeneratedCriteria matches criteria [is assignable to Object]
+2017-06-07 14:48:09,938 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.QualificationExample matches criteria [is assignable to Object]
+2017-06-07 14:48:09,954 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.Region matches criteria [is assignable to Object]
+2017-06-07 14:48:09,954 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.RegionExample$Criteria matches criteria [is assignable to Object]
+2017-06-07 14:48:09,954 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.RegionExample$Criterion matches criteria [is assignable to Object]
+2017-06-07 14:48:09,954 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.RegionExample$GeneratedCriteria matches criteria [is assignable to Object]
+2017-06-07 14:48:09,954 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.RegionExample matches criteria [is assignable to Object]
+2017-06-07 14:48:09,954 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.RelationRegionprovince matches criteria [is assignable to Object]
+2017-06-07 14:48:09,954 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.RelationRegionprovinceExample$Criteria matches criteria [is assignable to Object]
+2017-06-07 14:48:09,954 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.RelationRegionprovinceExample$Criterion matches criteria [is assignable to Object]
+2017-06-07 14:48:09,954 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.RelationRegionprovinceExample$GeneratedCriteria matches criteria [is assignable to Object]
+2017-06-07 14:48:09,954 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.RelationRegionprovinceExample matches criteria [is assignable to Object]
+2017-06-07 14:48:09,954 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.Staffpositiontype matches criteria [is assignable to Object]
+2017-06-07 14:48:09,954 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.StaffpositiontypeExample$Criteria matches criteria [is assignable to Object]
+2017-06-07 14:48:09,954 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.StaffpositiontypeExample$Criterion matches criteria [is assignable to Object]
+2017-06-07 14:48:09,954 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.StaffpositiontypeExample$GeneratedCriteria matches criteria [is assignable to Object]
+2017-06-07 14:48:09,954 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.StaffpositiontypeExample matches criteria [is assignable to Object]
+2017-06-07 14:48:09,970 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.Staffresume matches criteria [is assignable to Object]
+2017-06-07 14:48:09,970 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.StaffresumeExample$Criteria matches criteria [is assignable to Object]
+2017-06-07 14:48:09,970 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.StaffresumeExample$Criterion matches criteria [is assignable to Object]
+2017-06-07 14:48:09,970 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.StaffresumeExample$GeneratedCriteria matches criteria [is assignable to Object]
+2017-06-07 14:48:09,970 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.StaffresumeExample matches criteria [is assignable to Object]
+2017-06-07 14:48:09,970 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.Userinfo matches criteria [is assignable to Object]
+2017-06-07 14:48:09,970 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.UserinfoExample$Criteria matches criteria [is assignable to Object]
+2017-06-07 14:48:09,970 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.UserinfoExample$Criterion matches criteria [is assignable to Object]
+2017-06-07 14:48:09,970 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.UserinfoExample$GeneratedCriteria matches criteria [is assignable to Object]
+2017-06-07 14:48:09,970 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.UserinfoExample matches criteria [is assignable to Object]
+2017-06-07 14:48:11,250  INFO RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4ae82894: startup date [Wed Jun 07 14:48:04 CST 2017]; root of context hierarchy
+2017-06-07 14:48:11,354  INFO RequestMappingHandlerMapping:543 - Mapped "{[/fetch]}" onto public java.lang.String com.daimler.aftersales.controller.TriggerController.triggerTasks()
+2017-06-07 14:48:11,355  INFO RequestMappingHandlerMapping:543 - Mapped "{[/login]}" onto public java.lang.String com.daimler.aftersales.controller.TriggerController.loginTest()
+2017-06-07 14:48:11,355  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-06-07 14:48:11,355  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-06-07 14:48:11,387  INFO SimpleUrlHandlerMapping:354 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-06-07 14:48:11,387  INFO SimpleUrlHandlerMapping:354 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-06-07 14:48:11,449  INFO SimpleUrlHandlerMapping:354 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-06-07 14:48:12,206  INFO EndpointHandlerMapping:543 - Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2017-06-07 14:48:12,207  INFO EndpointHandlerMapping:543 - Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-06-07 14:48:12,208  INFO EndpointHandlerMapping:543 - Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-06-07 14:48:12,210  INFO EndpointHandlerMapping:543 - Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-06-07 14:48:12,215  INFO EndpointHandlerMapping:543 - Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2017-06-07 14:48:12,215  INFO EndpointHandlerMapping:543 - Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-06-07 14:48:12,215  INFO EndpointHandlerMapping:543 - Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2017-06-07 14:48:12,215  INFO EndpointHandlerMapping:543 - Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-06-07 14:48:12,215  INFO EndpointHandlerMapping:543 - Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2017-06-07 14:48:12,215  INFO EndpointHandlerMapping:543 - Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2017-06-07 14:48:12,215  INFO EndpointHandlerMapping:543 - Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-06-07 14:48:12,215  INFO EndpointHandlerMapping:543 - Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-06-07 14:48:12,215  INFO EndpointHandlerMapping:543 - Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-06-07 14:48:12,215  INFO EndpointHandlerMapping:543 - Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-06-07 14:48:12,231  INFO EndpointHandlerMapping:543 - Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2017-06-07 14:48:12,231  INFO EndpointHandlerMapping:543 - Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-06-07 14:48:12,231  INFO EndpointHandlerMapping:543 - Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest)
+2017-06-07 14:48:12,709  INFO AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-06-07 14:48:12,709  INFO AnnotationMBeanExporter:916 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2017-06-07 14:48:12,709  INFO AnnotationMBeanExporter:671 - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2017-06-07 14:48:12,725  INFO EndpointMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-06-07 14:48:12,725  INFO DefaultLifecycleProcessor:341 - Starting beans in phase 0
+2017-06-07 14:48:12,725  INFO EndpointMBeanExporter:678 - Located managed bean 'auditEventsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=auditEventsEndpoint]
+2017-06-07 14:48:12,756  INFO EndpointMBeanExporter:678 - Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+2017-06-07 14:48:12,772  INFO EndpointMBeanExporter:678 - Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+2017-06-07 14:48:12,772  INFO EndpointMBeanExporter:678 - Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+2017-06-07 14:48:12,772  INFO EndpointMBeanExporter:678 - Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+2017-06-07 14:48:12,787  INFO EndpointMBeanExporter:678 - Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+2017-06-07 14:48:12,787  INFO EndpointMBeanExporter:678 - Located managed bean 'loggersEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=loggersEndpoint]
+2017-06-07 14:48:12,803  INFO EndpointMBeanExporter:678 - Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+2017-06-07 14:48:12,803  INFO EndpointMBeanExporter:678 - Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+2017-06-07 14:48:12,803  INFO EndpointMBeanExporter:678 - Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+2017-06-07 14:48:12,803  INFO EndpointMBeanExporter:678 - Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
+2017-06-07 14:48:12,803  INFO EndpointMBeanExporter:678 - Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+2017-06-07 14:48:12,834  INFO ScheduledAnnotationBeanPostProcessor:260 - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2017-06-07 14:48:12,902  INFO TomcatEmbeddedServletContainer:192 - Tomcat started on port(s): 12345 (http)
+2017-06-07 14:48:12,917  INFO GetdataApplication:57 - Started GetdataApplication in 9.219 seconds (JVM running for 10.039)
+2017-06-07 14:49:32,006  INFO DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2017-06-07 14:49:32,051  INFO DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 44 ms
+2017-06-07 14:49:32,093  INFO ScheduleTasks:27 - Scheduled Tasks start to run!
+2017-06-07 14:49:32,093  INFO ILoginService:48 - Connecting to serverhttps://www.dic.mercedes-benz.com.cn/API/IM/Login
+2017-06-07 14:49:33,371  INFO ILoginService:57 - Login succeed! Token=e7ce2f26-d893-41eb-b4f3-e4ef5a61beaf
+2017-06-07 14:49:33,449  INFO FetchDataService:599 - Overall 4 records are going to be fetched from https://www.dic.mercedes-benz.com.cn/API/IDCIDs/Brand
+2017-06-07 14:49:33,480  INFO FetchDataService:610 - 1/1 records has been fetched
+2017-06-07 14:49:33,480  INFO FetchDataService:613 - 4 records are fetched actually
+2017-06-07 14:49:33,480  INFO FetchDataService:406 - Fetch brand data succeed
+2017-06-07 14:49:33,496  INFO FetchDataService:408 - Fetch Certification data starts
+2017-06-07 14:49:33,530  INFO FetchDataService:599 - Overall 20877 records are going to be fetched from https://www.dic.mercedes-benz.com.cn/API/IDCIDs/Certification
+2017-06-07 14:49:34,269  INFO FetchDataService:610 - 1/7 records has been fetched
+2017-06-07 14:49:34,800  INFO FetchDataService:610 - 2/7 records has been fetched
+2017-06-07 14:49:35,402  INFO FetchDataService:610 - 3/7 records has been fetched
+2017-06-07 14:49:36,074  INFO FetchDataService:610 - 4/7 records has been fetched
+2017-06-07 14:49:36,589  INFO FetchDataService:610 - 5/7 records has been fetched
+2017-06-07 14:49:37,162  INFO FetchDataService:610 - 6/7 records has been fetched
+2017-06-07 14:49:37,794  INFO FetchDataService:610 - 7/7 records has been fetched
+2017-06-07 14:49:37,794  INFO FetchDataService:613 - 20877 records are fetched actually
+2017-06-07 14:49:37,794  INFO FetchDataService:414 - Fetch certification data succeed
+2017-06-07 14:49:37,794  INFO FetchDataService:416 - Fetch city data started
+2017-06-07 14:49:37,843  INFO FetchDataService:599 - Overall 421 records are going to be fetched from https://www.dic.mercedes-benz.com.cn/API/IDCIDs/City
+2017-06-07 14:49:37,965  INFO FetchDataService:610 - 1/1 records has been fetched
+2017-06-07 14:49:37,965  INFO FetchDataService:613 - 421 records are fetched actually
+2017-06-07 14:49:37,965  INFO FetchDataService:422 - Fetch city data succeed
+2017-06-07 14:49:37,965  INFO FetchDataService:424 - Fetch CMS_Account starts
+2017-06-07 14:49:38,059  INFO FetchDataService:599 - Overall 102178 records are going to be fetched from https://www.dic.mercedes-benz.com.cn/API/IDCIDs/CMSAcount
+2017-06-07 14:49:40,949  INFO FetchDataService:610 - 1/35 records has been fetched
+2017-06-07 14:49:44,309  INFO FetchDataService:610 - 2/35 records has been fetched
+2017-06-07 14:49:47,169  INFO FetchDataService:610 - 3/35 records has been fetched
+2017-06-07 14:49:50,073  INFO FetchDataService:610 - 4/35 records has been fetched
+2017-06-07 14:49:52,387  INFO FetchDataService:610 - 5/35 records has been fetched
+2017-06-07 14:49:56,046  INFO FetchDataService:610 - 6/35 records has been fetched
+2017-06-07 14:49:58,965  INFO FetchDataService:610 - 7/35 records has been fetched
+2017-06-07 14:50:02,325  INFO FetchDataService:610 - 8/35 records has been fetched
+2017-06-07 14:50:04,669  INFO FetchDataService:610 - 9/35 records has been fetched
+2017-06-07 14:50:08,341  INFO FetchDataService:610 - 10/35 records has been fetched
+2017-06-07 14:50:10,685  INFO FetchDataService:610 - 11/35 records has been fetched
+2017-06-07 14:50:13,402  INFO FetchDataService:610 - 12/35 records has been fetched
+2017-06-07 14:50:16,035  INFO FetchDataService:610 - 13/35 records has been fetched
+2017-06-07 14:50:18,558  INFO FetchDataService:610 - 14/35 records has been fetched
+2017-06-07 14:50:21,871  INFO FetchDataService:610 - 15/35 records has been fetched
+2017-06-07 14:50:25,262  INFO FetchDataService:610 - 16/35 records has been fetched
+2017-06-07 14:50:27,524  INFO FetchDataService:610 - 17/35 records has been fetched
+2017-06-07 14:50:30,403  INFO FetchDataService:610 - 18/35 records has been fetched
+2017-06-07 14:50:33,247  INFO FetchDataService:610 - 19/35 records has been fetched
+2017-06-07 14:50:36,495  INFO FetchDataService:610 - 20/35 records has been fetched
+2017-06-07 14:50:39,356  INFO FetchDataService:610 - 21/35 records has been fetched
+2017-06-07 14:50:41,887  INFO FetchDataService:610 - 22/35 records has been fetched
+2017-06-07 14:50:44,517  INFO FetchDataService:610 - 23/35 records has been fetched
+2017-06-07 14:50:47,280  INFO FetchDataService:610 - 24/35 records has been fetched
+2017-06-07 14:50:50,386  INFO FetchDataService:610 - 25/35 records has been fetched
+2017-06-07 14:50:52,855  INFO FetchDataService:610 - 26/35 records has been fetched
+2017-06-07 14:50:55,481  INFO FetchDataService:610 - 27/35 records has been fetched
+2017-06-07 14:50:58,765  INFO FetchDataService:610 - 28/35 records has been fetched
+2017-06-07 14:51:01,404  INFO FetchDataService:610 - 29/35 records has been fetched
+2017-06-07 14:51:03,989  INFO FetchDataService:610 - 30/35 records has been fetched
+2017-06-07 14:51:10,055  INFO FetchDataService:610 - 31/35 records has been fetched
+2017-06-07 14:51:12,294  INFO FetchDataService:610 - 32/35 records has been fetched
+2017-06-07 14:51:14,965  INFO FetchDataService:610 - 33/35 records has been fetched
+2017-06-07 14:51:17,871  INFO FetchDataService:610 - 34/35 records has been fetched
+2017-06-07 14:51:18,169  INFO FetchDataService:610 - 35/35 records has been fetched
+2017-06-07 14:51:18,169  INFO FetchDataService:613 - 102178 records are fetched actually
+2017-06-07 14:51:18,169  INFO FetchDataService:430 - Fetch CMS_Account data succeed
+2017-06-07 14:51:18,169  INFO FetchDataService:432 - Fetch company data started
+2017-06-07 14:51:18,216  INFO FetchDataService:599 - Overall 487 records are going to be fetched from https://www.dic.mercedes-benz.com.cn/API/IDCIDs/Company
+2017-06-07 14:51:18,514  INFO FetchDataService:610 - 1/1 records has been fetched
+2017-06-07 14:51:18,514  INFO FetchDataService:613 - 487 records are fetched actually
+2017-06-07 14:51:18,514  INFO FetchDataService:438 - Fetch company data succeed
+2017-06-07 14:51:18,514  INFO FetchDataService:440 - Fetch dealer data started
+2017-06-07 14:51:18,558  INFO FetchDataService:599 - Overall 621 records are going to be fetched from https://www.dic.mercedes-benz.com.cn/API/IDCIDs/Dealer
+2017-06-07 14:51:20,064  INFO FetchDataService:610 - 1/1 records has been fetched
+2017-06-07 14:51:20,064  INFO FetchDataService:613 - 621 records are fetched actually
+2017-06-07 14:51:20,064  INFO FetchDataService:446 - Fetch dealer data succeed
+2017-06-07 14:51:20,064  INFO FetchDataService:448 - Fetch DealerAccount data started
+2017-06-07 14:51:20,127  INFO FetchDataService:599 - Overall 101787 records are going to be fetched from https://www.dic.mercedes-benz.com.cn/API/IDCIDs/DealerAccount
+2017-06-07 14:51:22,035  INFO FetchDataService:610 - 1/34 records has been fetched
+2017-06-07 14:51:23,668  INFO FetchDataService:610 - 2/34 records has been fetched
+2017-06-07 14:51:25,386  INFO FetchDataService:610 - 3/34 records has been fetched
+2017-06-07 14:51:27,418  INFO FetchDataService:610 - 4/34 records has been fetched
+2017-06-07 14:51:29,201  INFO FetchDataService:610 - 5/34 records has been fetched
+2017-06-07 14:51:31,231  INFO FetchDataService:610 - 6/34 records has been fetched
+2017-06-07 14:51:33,035  INFO FetchDataService:610 - 7/34 records has been fetched
+2017-06-07 14:51:34,496  INFO FetchDataService:610 - 8/34 records has been fetched
+2017-06-07 14:51:36,120  INFO FetchDataService:610 - 9/34 records has been fetched
+2017-06-07 14:51:37,873  INFO FetchDataService:610 - 10/34 records has been fetched
+2017-06-07 14:51:39,514  INFO FetchDataService:610 - 11/34 records has been fetched
+2017-06-07 14:51:41,018  INFO FetchDataService:610 - 12/34 records has been fetched
+2017-06-07 14:51:42,911  INFO FetchDataService:610 - 13/34 records has been fetched
+2017-06-07 14:51:44,294  INFO FetchDataService:610 - 14/34 records has been fetched
+2017-06-07 14:51:45,747  INFO FetchDataService:610 - 15/34 records has been fetched
+2017-06-07 14:51:47,496  INFO FetchDataService:610 - 16/34 records has been fetched
+2017-06-07 14:51:49,549  INFO FetchDataService:610 - 17/34 records has been fetched
+2017-06-07 14:51:50,918  INFO FetchDataService:610 - 18/34 records has been fetched
+2017-06-07 14:51:52,541  INFO FetchDataService:610 - 19/34 records has been fetched
+2017-06-07 14:51:54,146  INFO FetchDataService:610 - 20/34 records has been fetched
+2017-06-07 14:51:55,887  INFO FetchDataService:610 - 21/34 records has been fetched
+2017-06-07 14:51:57,419  INFO FetchDataService:610 - 22/34 records has been fetched
+2017-06-07 14:51:59,112  INFO FetchDataService:610 - 23/34 records has been fetched
+2017-06-07 14:52:00,449  INFO FetchDataService:610 - 24/34 records has been fetched
+2017-06-07 14:52:02,170  INFO FetchDataService:610 - 25/34 records has been fetched
+2017-06-07 14:52:07,294  INFO FetchDataService:610 - 26/34 records has been fetched
+2017-06-07 14:52:09,309  INFO FetchDataService:610 - 27/34 records has been fetched
+2017-06-07 14:52:11,037  INFO FetchDataService:610 - 28/34 records has been fetched
+2017-06-07 14:52:12,918  INFO FetchDataService:610 - 29/34 records has been fetched
+2017-06-07 14:52:14,887  INFO FetchDataService:610 - 30/34 records has been fetched
+2017-06-07 14:52:16,716  INFO FetchDataService:610 - 31/34 records has been fetched
+2017-06-07 14:52:18,716  INFO FetchDataService:610 - 32/34 records has been fetched
+2017-06-07 14:52:20,278  INFO FetchDataService:610 - 33/34 records has been fetched
+2017-06-07 14:52:21,902  INFO FetchDataService:610 - 34/34 records has been fetched
+2017-06-07 14:52:21,902  INFO FetchDataService:613 - 101787 records are fetched actually
+2017-06-07 14:52:21,902  INFO FetchDataService:454 - Fetch DealerAccount data succeed
+2017-06-07 14:52:21,902  INFO FetchDataService:456 - Fetch DealerFormat data started
+2017-06-07 14:52:21,934  INFO FetchDataService:599 - Overall 3 records are going to be fetched from https://www.dic.mercedes-benz.com.cn/API/IDCIDs/DealerFormat
+2017-06-07 14:52:21,965  INFO FetchDataService:610 - 1/1 records has been fetched
+2017-06-07 14:52:21,965  INFO FetchDataService:613 - 3 records are fetched actually
+2017-06-07 14:52:21,965  INFO FetchDataService:462 - Fetch DealerFormat data succeed
+2017-06-07 14:52:21,965  INFO FetchDataService:464 - Fetch DealerFormat data started
+2017-06-07 14:52:21,996  INFO FetchDataService:599 - Overall 14 records are going to be fetched from https://www.dic.mercedes-benz.com.cn/API/IDCIDs/DealerFormatCode
+2017-06-07 14:52:22,041  INFO FetchDataService:610 - 1/1 records has been fetched
+2017-06-07 14:52:22,042  INFO FetchDataService:613 - 14 records are fetched actually
+2017-06-07 14:52:22,042  INFO FetchDataService:470 - Fetch DealerFormat data succeed
+2017-06-07 14:52:22,042  INFO FetchDataService:472 - Fetch DealerGroup data started
+2017-06-07 14:52:22,074  INFO FetchDataService:599 - Overall 38 records are going to be fetched from https://www.dic.mercedes-benz.com.cn/API/IDCIDs/DealerGroup
+2017-06-07 14:52:22,105  INFO FetchDataService:610 - 1/1 records has been fetched
+2017-06-07 14:52:22,121  INFO FetchDataService:613 - 38 records are fetched actually
+2017-06-07 14:52:22,121  INFO FetchDataService:478 - Fetch DealerGroup data succeed
+2017-06-07 14:52:22,121  INFO FetchDataService:480 - Fetch DealerOwner data started
+2017-06-07 14:52:22,164  INFO FetchDataService:599 - Overall 7 records are going to be fetched from https://www.dic.mercedes-benz.com.cn/API/IDCIDs/DealerOwner
+2017-06-07 14:52:22,185  INFO FetchDataService:610 - 1/1 records has been fetched
+2017-06-07 14:52:22,185  INFO FetchDataService:613 - 7 records are fetched actually
+2017-06-07 14:52:22,185  INFO FetchDataService:486 - Fetch dealerowner data succeed
+2017-06-07 14:52:22,185  INFO FetchDataService:488 - Fetch dimissionReason data started
+2017-06-07 14:52:22,216  INFO FetchDataService:599 - Overall 44 records are going to be fetched from https://www.dic.mercedes-benz.com.cn/API/IDCIDs/DimissionReason
+2017-06-07 14:52:22,248  INFO FetchDataService:610 - 1/1 records has been fetched
+2017-06-07 14:52:22,248  INFO FetchDataService:613 - 44 records are fetched actually
+2017-06-07 14:52:22,248  INFO FetchDataService:494 - Fetch dimissionReason data succeed
+2017-06-07 14:52:22,248  INFO FetchDataService:496 - Fetch Ochart data started
+2017-06-07 14:52:22,294  INFO FetchDataService:599 - Overall 68952 records are going to be fetched from https://www.dic.mercedes-benz.com.cn/API/IDCIDs/OChart
+2017-06-07 14:52:23,982  INFO FetchDataService:610 - 1/23 records has been fetched
+2017-06-07 14:52:25,310  INFO FetchDataService:610 - 2/23 records has been fetched
+2017-06-07 14:52:26,402  INFO FetchDataService:610 - 3/23 records has been fetched
+2017-06-07 14:52:27,763  INFO FetchDataService:610 - 4/23 records has been fetched
+2017-06-07 14:52:29,247  INFO FetchDataService:610 - 5/23 records has been fetched
+2017-06-07 14:52:30,621  INFO FetchDataService:610 - 6/23 records has been fetched
+2017-06-07 14:52:31,848  INFO FetchDataService:610 - 7/23 records has been fetched
+2017-06-07 14:52:32,949  INFO FetchDataService:610 - 8/23 records has been fetched
+2017-06-07 14:52:34,217  INFO FetchDataService:610 - 9/23 records has been fetched
+2017-06-07 14:52:35,748  INFO FetchDataService:610 - 10/23 records has been fetched
+2017-06-07 14:52:37,121  INFO FetchDataService:610 - 11/23 records has been fetched
+2017-06-07 14:52:38,558  INFO FetchDataService:610 - 12/23 records has been fetched
+2017-06-07 14:52:39,621  INFO FetchDataService:610 - 13/23 records has been fetched
+2017-06-07 14:52:40,949  INFO FetchDataService:610 - 14/23 records has been fetched
+2017-06-07 14:52:42,934  INFO FetchDataService:610 - 15/23 records has been fetched
+2017-06-07 14:52:44,016  INFO FetchDataService:610 - 16/23 records has been fetched
+2017-06-07 14:52:45,404  INFO FetchDataService:610 - 17/23 records has been fetched
+2017-06-07 14:52:46,886  INFO FetchDataService:610 - 18/23 records has been fetched
+2017-06-07 14:52:48,074  INFO FetchDataService:610 - 19/23 records has been fetched
+2017-06-07 14:52:49,638  INFO FetchDataService:610 - 20/23 records has been fetched
+2017-06-07 14:52:50,845  INFO FetchDataService:610 - 21/23 records has been fetched
+2017-06-07 14:52:53,514  INFO FetchDataService:610 - 22/23 records has been fetched
+2017-06-07 14:52:56,551  INFO FetchDataService:610 - 23/23 records has been fetched
+2017-06-07 14:52:56,551  INFO FetchDataService:613 - 68952 records are fetched actually
+2017-06-07 14:52:56,551  INFO FetchDataService:502 - Fetch Ochart data succeed
+2017-06-07 14:52:56,551  INFO FetchDataService:504 - Fetch OchartCustom data started
+2017-06-07 14:52:56,591  INFO FetchDataService:599 - Overall 1878 records are going to be fetched from https://www.dic.mercedes-benz.com.cn/API/IDCIDs/OChartCustom
+2017-06-07 14:52:57,716  INFO FetchDataService:610 - 1/1 records has been fetched
+2017-06-07 14:52:57,716  INFO FetchDataService:613 - 1878 records are fetched actually
+2017-06-07 14:52:57,716  INFO FetchDataService:510 - Fetch OchartCustom data succeed
+2017-06-07 14:52:57,716  INFO FetchDataService:512 - Fetch province data started
+2017-06-07 14:52:57,763  INFO FetchDataService:599 - Overall 34 records are going to be fetched from https://www.dic.mercedes-benz.com.cn/API/IDCIDs/Province
+2017-06-07 14:52:57,810  INFO FetchDataService:610 - 1/1 records has been fetched
+2017-06-07 14:52:57,810  INFO FetchDataService:613 - 34 records are fetched actually
+2017-06-07 14:52:57,810  INFO FetchDataService:518 - Fetch province data succeed
+2017-06-07 14:52:57,810  INFO FetchDataService:520 - Fetch qualification data started
+2017-06-07 14:52:57,856  INFO FetchDataService:599 - Overall 6 records are going to be fetched from https://www.dic.mercedes-benz.com.cn/API/IDCIDs/Qualification
+2017-06-07 14:52:57,887  INFO FetchDataService:610 - 1/1 records has been fetched
+2017-06-07 14:52:57,887  INFO FetchDataService:613 - 6 records are fetched actually
+2017-06-07 14:52:57,887  INFO FetchDataService:526 - Fetch qualification data succeed
+2017-06-07 14:52:57,903  INFO FetchDataService:528 - Fetch staffPositionType data started
+2017-06-07 14:52:57,950  INFO FetchDataService:599 - Overall 2 records are going to be fetched from https://www.dic.mercedes-benz.com.cn/API/IDCIDs/StaffPositionType
+2017-06-07 14:52:57,981  INFO FetchDataService:610 - 1/1 records has been fetched
+2017-06-07 14:52:57,981  INFO FetchDataService:613 - 2 records are fetched actually
+2017-06-07 14:52:57,981  INFO FetchDataService:534 - Fetch staffPositionType data succeed
+2017-06-07 14:52:57,981  INFO FetchDataService:536 - Fetch staffResume data started
+2017-06-07 14:52:58,058  INFO FetchDataService:599 - Overall 177595 records are going to be fetched from https://www.dic.mercedes-benz.com.cn/API/IDCIDs/StaffResume
+2017-06-07 14:52:58,701  INFO FetchDataService:610 - 1/60 records has been fetched
+2017-06-07 14:52:59,558  INFO FetchDataService:610 - 2/60 records has been fetched
+2017-06-07 14:53:00,201  INFO FetchDataService:610 - 3/60 records has been fetched
+2017-06-07 14:53:00,965  INFO FetchDataService:610 - 4/60 records has been fetched
+2017-06-07 14:53:01,573  INFO FetchDataService:610 - 5/60 records has been fetched
+2017-06-07 14:53:02,185  INFO FetchDataService:610 - 6/60 records has been fetched
+2017-06-07 14:53:02,965  INFO FetchDataService:610 - 7/60 records has been fetched
+2017-06-07 14:53:03,621  INFO FetchDataService:610 - 8/60 records has been fetched
+2017-06-07 14:53:04,263  INFO FetchDataService:610 - 9/60 records has been fetched
+2017-06-07 14:53:05,098  INFO FetchDataService:610 - 10/60 records has been fetched
+2017-06-07 14:53:06,058  INFO FetchDataService:610 - 11/60 records has been fetched
+2017-06-07 14:53:07,105  INFO FetchDataService:610 - 12/60 records has been fetched
+2017-06-07 14:53:08,074  INFO FetchDataService:610 - 13/60 records has been fetched
+2017-06-07 14:53:09,121  INFO FetchDataService:610 - 14/60 records has been fetched
+2017-06-07 14:53:09,949  INFO FetchDataService:610 - 15/60 records has been fetched
+2017-06-07 14:53:10,669  INFO FetchDataService:610 - 16/60 records has been fetched
+2017-06-07 14:53:11,621  INFO FetchDataService:610 - 17/60 records has been fetched
+2017-06-07 14:53:12,547  INFO FetchDataService:610 - 18/60 records has been fetched
+2017-06-07 14:53:13,513  INFO FetchDataService:610 - 19/60 records has been fetched
+2017-06-07 14:53:14,310  INFO FetchDataService:610 - 20/60 records has been fetched
+2017-06-07 14:53:15,201  INFO FetchDataService:610 - 21/60 records has been fetched
+2017-06-07 14:53:15,887  INFO FetchDataService:610 - 22/60 records has been fetched
+2017-06-07 14:53:16,763  INFO FetchDataService:610 - 23/60 records has been fetched
+2017-06-07 14:53:17,605  INFO FetchDataService:610 - 24/60 records has been fetched
+2017-06-07 14:53:18,574  INFO FetchDataService:610 - 25/60 records has been fetched
+2017-06-07 14:53:19,433  INFO FetchDataService:610 - 26/60 records has been fetched
+2017-06-07 14:53:20,122  INFO FetchDataService:610 - 27/60 records has been fetched
+2017-06-07 14:53:20,842  INFO FetchDataService:610 - 28/60 records has been fetched
+2017-06-07 14:53:21,685  INFO FetchDataService:610 - 29/60 records has been fetched
+2017-06-07 14:53:22,605  INFO FetchDataService:610 - 30/60 records has been fetched
+2017-06-07 14:53:23,386  INFO FetchDataService:610 - 31/60 records has been fetched
+2017-06-07 14:53:24,465  INFO FetchDataService:610 - 32/60 records has been fetched
+2017-06-07 14:53:25,386  INFO FetchDataService:610 - 33/60 records has been fetched
+2017-06-07 14:53:26,105  INFO FetchDataService:610 - 34/60 records has been fetched
+2017-06-07 14:53:27,090  INFO FetchDataService:610 - 35/60 records has been fetched
+2017-06-07 14:53:27,871  INFO FetchDataService:610 - 36/60 records has been fetched
+2017-06-07 14:53:28,856  INFO FetchDataService:610 - 37/60 records has been fetched
+2017-06-07 14:53:30,167  INFO FetchDataService:610 - 38/60 records has been fetched
+2017-06-07 14:53:31,105  INFO FetchDataService:610 - 39/60 records has been fetched
+2017-06-07 14:53:32,075  INFO FetchDataService:610 - 40/60 records has been fetched
+2017-06-07 14:53:32,810  INFO FetchDataService:610 - 41/60 records has been fetched
+2017-06-07 14:53:33,732  INFO FetchDataService:610 - 42/60 records has been fetched
+2017-06-07 14:53:34,433  INFO FetchDataService:610 - 43/60 records has been fetched
+2017-06-07 14:53:35,231  INFO FetchDataService:610 - 44/60 records has been fetched
+2017-06-07 14:53:36,091  INFO FetchDataService:610 - 45/60 records has been fetched
+2017-06-07 14:53:37,004  INFO FetchDataService:610 - 46/60 records has been fetched
+2017-06-07 14:53:37,639  INFO FetchDataService:610 - 47/60 records has been fetched
+2017-06-07 14:53:39,433  INFO FetchDataService:610 - 48/60 records has been fetched
+2017-06-07 14:53:40,480  INFO FetchDataService:610 - 49/60 records has been fetched
+2017-06-07 14:53:41,217  INFO FetchDataService:610 - 50/60 records has been fetched
+2017-06-07 14:53:42,185  INFO FetchDataService:610 - 51/60 records has been fetched
+2017-06-07 14:53:43,310  INFO FetchDataService:610 - 52/60 records has been fetched
+2017-06-07 14:53:44,357  INFO FetchDataService:610 - 53/60 records has been fetched
+2017-06-07 14:53:45,589  INFO FetchDataService:610 - 54/60 records has been fetched
+2017-06-07 14:53:46,638  INFO FetchDataService:610 - 55/60 records has been fetched
+2017-06-07 14:53:47,585  INFO FetchDataService:610 - 56/60 records has been fetched
+2017-06-07 14:53:48,249  INFO FetchDataService:610 - 57/60 records has been fetched
+2017-06-07 14:53:49,074  INFO FetchDataService:610 - 58/60 records has been fetched
+2017-06-07 14:53:49,825  INFO FetchDataService:610 - 59/60 records has been fetched
+2017-06-07 14:53:50,122  INFO FetchDataService:610 - 60/60 records has been fetched
+2017-06-07 14:53:50,122  INFO FetchDataService:613 - 177595 records are fetched actually
+2017-06-07 14:53:50,122  INFO FetchDataService:542 - Fetch staffResume data succeed
+2017-06-07 14:53:50,122  INFO FetchDataService:544 - Fetch UserInfo data started
+2017-06-07 14:53:50,169  INFO FetchDataService:599 - Overall 91111 records are going to be fetched from https://www.dic.mercedes-benz.com.cn/API/IDCIDs/UserInfo
+2017-06-07 14:53:51,560  INFO FetchDataService:610 - 1/31 records has been fetched
+2017-06-07 14:53:53,247  INFO FetchDataService:610 - 2/31 records has been fetched
+2017-06-07 14:53:55,106  INFO FetchDataService:610 - 3/31 records has been fetched
+2017-06-07 14:53:56,871  INFO FetchDataService:610 - 4/31 records has been fetched
+2017-06-07 14:53:58,621  INFO FetchDataService:610 - 5/31 records has been fetched
+2017-06-07 14:54:00,660  INFO FetchDataService:610 - 6/31 records has been fetched
+2017-06-07 14:54:04,372  INFO FetchDataService:610 - 7/31 records has been fetched
+2017-06-07 14:54:05,949  INFO FetchDataService:610 - 8/31 records has been fetched
+2017-06-07 14:54:07,558  INFO FetchDataService:610 - 9/31 records has been fetched
+2017-06-07 14:54:09,525  INFO FetchDataService:610 - 10/31 records has been fetched
+2017-06-07 14:54:10,794  INFO FetchDataService:610 - 11/31 records has been fetched
+2017-06-07 14:54:12,763  INFO FetchDataService:610 - 12/31 records has been fetched
+2017-06-07 14:54:14,434  INFO FetchDataService:610 - 13/31 records has been fetched
+2017-06-07 14:54:16,716  INFO FetchDataService:610 - 14/31 records has been fetched
+2017-06-07 14:54:18,243  INFO FetchDataService:610 - 15/31 records has been fetched
+2017-06-07 14:54:19,846  INFO FetchDataService:610 - 16/31 records has been fetched
+2017-06-07 14:54:21,622  INFO FetchDataService:610 - 17/31 records has been fetched
+2017-06-07 14:54:23,496  INFO FetchDataService:610 - 18/31 records has been fetched
+2017-06-07 14:54:25,556  INFO FetchDataService:610 - 19/31 records has been fetched
+2017-06-07 14:54:27,621  INFO FetchDataService:610 - 20/31 records has been fetched
+2017-06-07 14:54:29,418  INFO FetchDataService:610 - 21/31 records has been fetched
+2017-06-07 14:54:31,058  INFO FetchDataService:610 - 22/31 records has been fetched
+2017-06-07 14:54:32,702  INFO FetchDataService:610 - 23/31 records has been fetched
+2017-06-07 14:54:34,636  INFO FetchDataService:610 - 24/31 records has been fetched
+2017-06-07 14:54:36,279  INFO FetchDataService:610 - 25/31 records has been fetched
+2017-06-07 14:54:38,090  INFO FetchDataService:610 - 26/31 records has been fetched
+2017-06-07 14:54:39,474  INFO FetchDataService:610 - 27/31 records has been fetched
+2017-06-07 14:54:40,790  INFO FetchDataService:610 - 28/31 records has been fetched
+2017-06-07 14:54:42,200  INFO FetchDataService:610 - 29/31 records has been fetched
+2017-06-07 14:54:43,552  INFO FetchDataService:610 - 30/31 records has been fetched
+2017-06-07 14:54:44,249  INFO FetchDataService:610 - 31/31 records has been fetched
+2017-06-07 14:54:44,249  INFO FetchDataService:613 - 91111 records are fetched actually
+2017-06-07 14:54:44,249  INFO FetchDataService:550 - Fetch UserInfo data succeed
+2017-06-07 14:54:44,249  INFO FetchDataService:552 - Fetch region data started
+2017-06-07 14:54:44,280  INFO FetchDataService:599 - Overall 17 records are going to be fetched from https://www.dic.mercedes-benz.com.cn/API/IDCIDs/Region
+2017-06-07 14:54:44,327  INFO FetchDataService:610 - 1/1 records has been fetched
+2017-06-07 14:54:44,327  INFO FetchDataService:613 - 17 records are fetched actually
+2017-06-07 14:54:44,327  INFO FetchDataService:558 - Fetch region data succeed
+2017-06-07 14:54:44,327  INFO FetchDataService:560 - Fetch RegionProvince data started
+2017-06-07 14:54:44,387  INFO FetchDataService:599 - Overall 170 records are going to be fetched from https://www.dic.mercedes-benz.com.cn/API/IDCIDs/RelationRegionProvince
+2017-06-07 14:54:44,433  INFO FetchDataService:610 - 1/1 records has been fetched
+2017-06-07 14:54:44,433  INFO FetchDataService:613 - 170 records are fetched actually
+2017-06-07 14:54:44,433  INFO FetchDataService:566 - Fetch RegionProvince data succeed
+2017-06-07 14:54:59,162 ERROR DruidDataSource:641 - init datasource error, url: jdbc:sqlserver://192.168.31.232:1433;DatabaseName=DICData
+com.microsoft.sqlserver.jdbc.SQLServerException: The TCP/IP connection to the host 192.168.31.232, port 1433 has failed. Error: "Connection refused: no further information. Verify the connection properties. Make sure that an instance of SQL Server is running on the host and accepting TCP/IP connections at the port. Make sure that TCP connections to the port are not blocked by a firewall.".
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDriverError(SQLServerException.java:206)
+	at com.microsoft.sqlserver.jdbc.SQLServerException.ConvertConnectExceptionToSQLServerException(SQLServerException.java:257)
+	at com.microsoft.sqlserver.jdbc.SocketFinder.findSocket(IOBuffer.java:2385)
+	at com.microsoft.sqlserver.jdbc.TDSChannel.open(IOBuffer.java:567)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectHelper(SQLServerConnection.java:1955)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.login(SQLServerConnection.java:1616)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectInternal(SQLServerConnection.java:1447)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connect(SQLServerConnection.java:788)
+	at com.microsoft.sqlserver.jdbc.SQLServerDriver.connect(SQLServerDriver.java:1187)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:785)
+	at com.alibaba.druid.filter.FilterEventAdapter.connection_connect(FilterEventAdapter.java:38)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:785)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:211)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1377)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:630)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:927)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:923)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:100)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:111)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:77)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:84)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:70)
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:337)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:84)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:49)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.delete(DefaultSqlSession.java:213)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:434)
+	at com.sun.proxy.$Proxy70.delete(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.delete(SqlSessionTemplate.java:311)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:53)
+	at com.sun.proxy.$Proxy71.truncate(Unknown Source)
+	at com.daimler.aftersales.service.impl.FetchDataService.insertBrand(FetchDataService.java:45)
+	at com.daimler.aftersales.service.impl.FetchDataService.fetchDataManager(FetchDataService.java:569)
+	at com.daimler.aftersales.scheduler.ScheduleTasks.getDate(ScheduleTasks.java:29)
+	at com.daimler.aftersales.controller.TriggerController$1.run(TriggerController.java:25)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-07 14:54:59,170 ERROR DruidDataSource:658 - dataSource init error
+com.microsoft.sqlserver.jdbc.SQLServerException: The TCP/IP connection to the host 192.168.31.232, port 1433 has failed. Error: "Connection refused: no further information. Verify the connection properties. Make sure that an instance of SQL Server is running on the host and accepting TCP/IP connections at the port. Make sure that TCP connections to the port are not blocked by a firewall.".
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDriverError(SQLServerException.java:206)
+	at com.microsoft.sqlserver.jdbc.SQLServerException.ConvertConnectExceptionToSQLServerException(SQLServerException.java:257)
+	at com.microsoft.sqlserver.jdbc.SocketFinder.findSocket(IOBuffer.java:2385)
+	at com.microsoft.sqlserver.jdbc.TDSChannel.open(IOBuffer.java:567)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectHelper(SQLServerConnection.java:1955)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.login(SQLServerConnection.java:1616)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectInternal(SQLServerConnection.java:1447)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connect(SQLServerConnection.java:788)
+	at com.microsoft.sqlserver.jdbc.SQLServerDriver.connect(SQLServerDriver.java:1187)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:785)
+	at com.alibaba.druid.filter.FilterEventAdapter.connection_connect(FilterEventAdapter.java:38)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:785)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:211)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1377)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:630)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:927)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:923)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:100)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:111)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:77)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:84)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:70)
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:337)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:84)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:49)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.delete(DefaultSqlSession.java:213)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:434)
+	at com.sun.proxy.$Proxy70.delete(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.delete(SqlSessionTemplate.java:311)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:53)
+	at com.sun.proxy.$Proxy71.truncate(Unknown Source)
+	at com.daimler.aftersales.service.impl.FetchDataService.insertBrand(FetchDataService.java:45)
+	at com.daimler.aftersales.service.impl.FetchDataService.fetchDataManager(FetchDataService.java:569)
+	at com.daimler.aftersales.scheduler.ScheduleTasks.getDate(ScheduleTasks.java:29)
+	at com.daimler.aftersales.controller.TriggerController$1.run(TriggerController.java:25)
+	at java.lang.Thread.run(Thread.java:745)
+2017-06-07 14:54:59,186  INFO DruidDataSource:667 - {dataSource-1} inited
+2017-06-07 15:01:39,733  INFO GetdataApplication:48 - Starting GetdataApplication on DESKTOP-C9U0JSN with PID 4112 (C:\Users\zhuyuchao\IdeaProjects\getdata\target\classes started by zhuyuchao in C:\Users\zhuyuchao\IdeaProjects\getdata)
+2017-06-07 15:01:39,733  INFO GetdataApplication:641 - The following profiles are active: dev
+2017-06-07 15:01:39,853  INFO AnnotationConfigEmbeddedWebApplicationContext:582 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4ae82894: startup date [Wed Jun 07 15:01:39 CST 2017]; root of context hierarchy
+2017-06-07 15:01:41,171  INFO Version:30 - HV000001: Hibernate Validator 5.3.4.Final
+2017-06-07 15:01:42,868  INFO AutowiredAnnotationBeanPostProcessor:155 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-06-07 15:01:43,076  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:325 - Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-06-07 15:01:43,281  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:325 - Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-06-07 15:01:43,377  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:325 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1c6bde5b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-06-07 15:01:44,357  INFO TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 12345 (http)
+2017-06-07 15:01:44,561  INFO ContextLoader:276 - Root WebApplicationContext: initialization completed in 4713 ms
+2017-06-07 15:01:45,063  INFO ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-06-07 15:01:45,063  INFO ServletRegistrationBean:190 - Mapping servlet: 'com.daimler.aftersales.servlet.DruidStatViewServlet' to [/druid/*]
+2017-06-07 15:01:45,063  INFO FilterRegistrationBean:258 - Mapping filter: 'metricsFilter' to: [/*]
+2017-06-07 15:01:45,063  INFO FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-06-07 15:01:45,063  INFO FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-06-07 15:01:45,063  INFO FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-06-07 15:01:45,078  INFO FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2017-06-07 15:01:45,078  INFO FilterRegistrationBean:258 - Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2017-06-07 15:01:45,078  INFO FilterRegistrationBean:271 - Mapping filter: 'druidWebStatFilter' to urls: [/*]
+2017-06-07 15:01:45,078  INFO FilterRegistrationBean:258 - Mapping filter: 'applicationContextIdFilter' to: [/*]
+2017-06-07 15:01:45,565 DEBUG LogFactory:54 - Logging initialized using 'class org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2017-06-07 15:01:45,611 DEBUG VFS:54 - Using VFS adapter org.mybatis.spring.boot.autoconfigure.SpringBootVFS
+2017-06-07 15:01:45,643 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.BrandPOJO matches criteria [is assignable to Object]
+2017-06-07 15:01:45,643 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.CertificationPOJO matches criteria [is assignable to Object]
+2017-06-07 15:01:45,643 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.CityPOJO matches criteria [is assignable to Object]
+2017-06-07 15:01:45,643 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.CMSAccountPOJO matches criteria [is assignable to Object]
+2017-06-07 15:01:45,643 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.CompanyPOJO matches criteria [is assignable to Object]
+2017-06-07 15:01:45,643 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.Dealeraccount matches criteria [is assignable to Object]
+2017-06-07 15:01:45,643 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.DealeraccountExample$Criteria matches criteria [is assignable to Object]
+2017-06-07 15:01:45,643 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.DealeraccountExample$Criterion matches criteria [is assignable to Object]
+2017-06-07 15:01:45,643 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.DealeraccountExample$GeneratedCriteria matches criteria [is assignable to Object]
+2017-06-07 15:01:45,643 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.DealeraccountExample matches criteria [is assignable to Object]
+2017-06-07 15:01:45,643 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.Dealerformat matches criteria [is assignable to Object]
+2017-06-07 15:01:45,643 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.Dealerformatcode matches criteria [is assignable to Object]
+2017-06-07 15:01:45,643 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.DealerformatcodeExample$Criteria matches criteria [is assignable to Object]
+2017-06-07 15:01:45,643 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.DealerformatcodeExample$Criterion matches criteria [is assignable to Object]
+2017-06-07 15:01:45,643 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.DealerformatcodeExample$GeneratedCriteria matches criteria [is assignable to Object]
+2017-06-07 15:01:45,643 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.DealerformatcodeExample matches criteria [is assignable to Object]
+2017-06-07 15:01:45,643 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.DealerformatExample$Criteria matches criteria [is assignable to Object]
+2017-06-07 15:01:45,658 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.DealerformatExample$Criterion matches criteria [is assignable to Object]
+2017-06-07 15:01:45,665 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.DealerformatExample$GeneratedCriteria matches criteria [is assignable to Object]
+2017-06-07 15:01:45,666 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.DealerformatExample matches criteria [is assignable to Object]
+2017-06-07 15:01:45,667 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.Dealergroup matches criteria [is assignable to Object]
+2017-06-07 15:01:45,668 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.DealergroupExample$Criteria matches criteria [is assignable to Object]
+2017-06-07 15:01:45,671 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.DealergroupExample$Criterion matches criteria [is assignable to Object]
+2017-06-07 15:01:45,672 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.DealergroupExample$GeneratedCriteria matches criteria [is assignable to Object]
+2017-06-07 15:01:45,672 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.DealergroupExample matches criteria [is assignable to Object]
+2017-06-07 15:01:45,672 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.Dealerowner matches criteria [is assignable to Object]
+2017-06-07 15:01:45,672 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.DealerownerExample$Criteria matches criteria [is assignable to Object]
+2017-06-07 15:01:45,672 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.DealerownerExample$Criterion matches criteria [is assignable to Object]
+2017-06-07 15:01:45,672 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.DealerownerExample$GeneratedCriteria matches criteria [is assignable to Object]
+2017-06-07 15:01:45,672 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.DealerownerExample matches criteria [is assignable to Object]
+2017-06-07 15:01:45,672 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.DealerPOJO matches criteria [is assignable to Object]
+2017-06-07 15:01:45,672 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.Dimissionreason matches criteria [is assignable to Object]
+2017-06-07 15:01:45,672 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.DimissionreasonExample$Criteria matches criteria [is assignable to Object]
+2017-06-07 15:01:45,672 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.DimissionreasonExample$Criterion matches criteria [is assignable to Object]
+2017-06-07 15:01:45,672 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.DimissionreasonExample$GeneratedCriteria matches criteria [is assignable to Object]
+2017-06-07 15:01:45,672 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.DimissionreasonExample matches criteria [is assignable to Object]
+2017-06-07 15:01:45,672 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.LoginInfo matches criteria [is assignable to Object]
+2017-06-07 15:01:45,672 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.Ochart matches criteria [is assignable to Object]
+2017-06-07 15:01:45,672 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.Ochartcustom matches criteria [is assignable to Object]
+2017-06-07 15:01:45,672 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.OchartcustomExample$Criteria matches criteria [is assignable to Object]
+2017-06-07 15:01:45,687 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.OchartcustomExample$Criterion matches criteria [is assignable to Object]
+2017-06-07 15:01:45,687 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.OchartcustomExample$GeneratedCriteria matches criteria [is assignable to Object]
+2017-06-07 15:01:45,687 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.OchartcustomExample matches criteria [is assignable to Object]
+2017-06-07 15:01:45,687 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.OchartExample$Criteria matches criteria [is assignable to Object]
+2017-06-07 15:01:45,687 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.OchartExample$Criterion matches criteria [is assignable to Object]
+2017-06-07 15:01:45,687 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.OchartExample$GeneratedCriteria matches criteria [is assignable to Object]
+2017-06-07 15:01:45,687 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.OchartExample matches criteria [is assignable to Object]
+2017-06-07 15:01:45,687 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.Province matches criteria [is assignable to Object]
+2017-06-07 15:01:45,687 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.ProvinceExample$Criteria matches criteria [is assignable to Object]
+2017-06-07 15:01:45,687 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.ProvinceExample$Criterion matches criteria [is assignable to Object]
+2017-06-07 15:01:45,687 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.ProvinceExample$GeneratedCriteria matches criteria [is assignable to Object]
+2017-06-07 15:01:45,687 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.ProvinceExample matches criteria [is assignable to Object]
+2017-06-07 15:01:45,703 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.Qualification matches criteria [is assignable to Object]
+2017-06-07 15:01:45,703 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.QualificationExample$Criteria matches criteria [is assignable to Object]
+2017-06-07 15:01:45,703 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.QualificationExample$Criterion matches criteria [is assignable to Object]
+2017-06-07 15:01:45,703 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.QualificationExample$GeneratedCriteria matches criteria [is assignable to Object]
+2017-06-07 15:01:45,703 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.QualificationExample matches criteria [is assignable to Object]
+2017-06-07 15:01:45,703 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.Region matches criteria [is assignable to Object]
+2017-06-07 15:01:45,703 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.RegionExample$Criteria matches criteria [is assignable to Object]
+2017-06-07 15:01:45,703 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.RegionExample$Criterion matches criteria [is assignable to Object]
+2017-06-07 15:01:45,703 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.RegionExample$GeneratedCriteria matches criteria [is assignable to Object]
+2017-06-07 15:01:45,703 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.RegionExample matches criteria [is assignable to Object]
+2017-06-07 15:01:45,703 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.RelationRegionprovince matches criteria [is assignable to Object]
+2017-06-07 15:01:45,703 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.RelationRegionprovinceExample$Criteria matches criteria [is assignable to Object]
+2017-06-07 15:01:45,703 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.RelationRegionprovinceExample$Criterion matches criteria [is assignable to Object]
+2017-06-07 15:01:45,703 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.RelationRegionprovinceExample$GeneratedCriteria matches criteria [is assignable to Object]
+2017-06-07 15:01:45,703 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.RelationRegionprovinceExample matches criteria [is assignable to Object]
+2017-06-07 15:01:45,703 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.Staffpositiontype matches criteria [is assignable to Object]
+2017-06-07 15:01:45,703 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.StaffpositiontypeExample$Criteria matches criteria [is assignable to Object]
+2017-06-07 15:01:45,703 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.StaffpositiontypeExample$Criterion matches criteria [is assignable to Object]
+2017-06-07 15:01:45,703 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.StaffpositiontypeExample$GeneratedCriteria matches criteria [is assignable to Object]
+2017-06-07 15:01:45,703 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.StaffpositiontypeExample matches criteria [is assignable to Object]
+2017-06-07 15:01:45,719 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.Staffresume matches criteria [is assignable to Object]
+2017-06-07 15:01:45,719 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.StaffresumeExample$Criteria matches criteria [is assignable to Object]
+2017-06-07 15:01:45,719 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.StaffresumeExample$Criterion matches criteria [is assignable to Object]
+2017-06-07 15:01:45,719 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.StaffresumeExample$GeneratedCriteria matches criteria [is assignable to Object]
+2017-06-07 15:01:45,719 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.StaffresumeExample matches criteria [is assignable to Object]
+2017-06-07 15:01:45,719 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.Userinfo matches criteria [is assignable to Object]
+2017-06-07 15:01:45,719 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.UserinfoExample$Criteria matches criteria [is assignable to Object]
+2017-06-07 15:01:45,719 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.UserinfoExample$Criterion matches criteria [is assignable to Object]
+2017-06-07 15:01:45,719 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.UserinfoExample$GeneratedCriteria matches criteria [is assignable to Object]
+2017-06-07 15:01:45,719 DEBUG ResolverUtil:54 - Checking to see if class com.daimler.aftersales.entity.UserinfoExample matches criteria [is assignable to Object]
+2017-06-07 15:01:46,934  INFO RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4ae82894: startup date [Wed Jun 07 15:01:39 CST 2017]; root of context hierarchy
+2017-06-07 15:01:47,050  INFO RequestMappingHandlerMapping:543 - Mapped "{[/fetch]}" onto public java.lang.String com.daimler.aftersales.controller.TriggerController.triggerTasks()
+2017-06-07 15:01:47,052  INFO RequestMappingHandlerMapping:543 - Mapped "{[/login]}" onto public java.lang.String com.daimler.aftersales.controller.TriggerController.loginTest()
+2017-06-07 15:01:47,055  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-06-07 15:01:47,055  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-06-07 15:01:47,092  INFO SimpleUrlHandlerMapping:354 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-06-07 15:01:47,092  INFO SimpleUrlHandlerMapping:354 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-06-07 15:01:47,155  INFO SimpleUrlHandlerMapping:354 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-06-07 15:01:47,767  INFO EndpointHandlerMapping:543 - Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2017-06-07 15:01:47,767  INFO EndpointHandlerMapping:543 - Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-06-07 15:01:47,767  INFO EndpointHandlerMapping:543 - Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-06-07 15:01:47,767  INFO EndpointHandlerMapping:543 - Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-06-07 15:01:47,782  INFO EndpointHandlerMapping:543 - Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2017-06-07 15:01:47,782  INFO EndpointHandlerMapping:543 - Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-06-07 15:01:47,782  INFO EndpointHandlerMapping:543 - Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2017-06-07 15:01:47,782  INFO EndpointHandlerMapping:543 - Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-06-07 15:01:47,782  INFO EndpointHandlerMapping:543 - Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2017-06-07 15:01:47,798  INFO EndpointHandlerMapping:543 - Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2017-06-07 15:01:47,798  INFO EndpointHandlerMapping:543 - Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-06-07 15:01:47,798  INFO EndpointHandlerMapping:543 - Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-06-07 15:01:47,798  INFO EndpointHandlerMapping:543 - Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-06-07 15:01:47,798  INFO EndpointHandlerMapping:543 - Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-06-07 15:01:47,798  INFO EndpointHandlerMapping:543 - Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2017-06-07 15:01:47,798  INFO EndpointHandlerMapping:543 - Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-06-07 15:01:47,798  INFO EndpointHandlerMapping:543 - Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest)
+2017-06-07 15:01:48,339  INFO AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-06-07 15:01:48,340  INFO AnnotationMBeanExporter:916 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2017-06-07 15:01:48,353  INFO AnnotationMBeanExporter:671 - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2017-06-07 15:01:48,358  INFO EndpointMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-06-07 15:01:48,367  INFO DefaultLifecycleProcessor:341 - Starting beans in phase 0
+2017-06-07 15:01:48,370  INFO EndpointMBeanExporter:678 - Located managed bean 'auditEventsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=auditEventsEndpoint]
+2017-06-07 15:01:48,397  INFO EndpointMBeanExporter:678 - Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+2017-06-07 15:01:48,397  INFO EndpointMBeanExporter:678 - Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+2017-06-07 15:01:48,413  INFO EndpointMBeanExporter:678 - Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+2017-06-07 15:01:48,413  INFO EndpointMBeanExporter:678 - Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+2017-06-07 15:01:48,429  INFO EndpointMBeanExporter:678 - Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+2017-06-07 15:01:48,444  INFO EndpointMBeanExporter:678 - Located managed bean 'loggersEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=loggersEndpoint]
+2017-06-07 15:01:48,460  INFO EndpointMBeanExporter:678 - Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+2017-06-07 15:01:48,460  INFO EndpointMBeanExporter:678 - Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+2017-06-07 15:01:48,460  INFO EndpointMBeanExporter:678 - Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+2017-06-07 15:01:48,460  INFO EndpointMBeanExporter:678 - Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
+2017-06-07 15:01:48,476  INFO EndpointMBeanExporter:678 - Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+2017-06-07 15:01:48,491  INFO ScheduledAnnotationBeanPostProcessor:260 - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2017-06-07 15:01:48,618  INFO TomcatEmbeddedServletContainer:192 - Tomcat started on port(s): 12345 (http)
+2017-06-07 15:01:48,634  INFO GetdataApplication:57 - Started GetdataApplication in 9.397 seconds (JVM running for 10.157)
+2017-06-07 15:01:52,400  INFO DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2017-06-07 15:01:52,439  INFO DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 39 ms
+2017-06-07 15:01:52,508  INFO ScheduleTasks:27 - Scheduled Tasks start to run!
+2017-06-07 15:01:52,509  INFO ILoginService:48 - Connecting to serverhttps://www.dic.mercedes-benz.com.cn/API/IM/Login
+2017-06-07 15:01:53,419  INFO ILoginService:57 - Login succeed! Token=63750030-9d6e-451c-abe4-4a6313531c5a
+2017-06-07 15:01:53,466  INFO FetchDataService:599 - Overall 4 records are going to be fetched from https://www.dic.mercedes-benz.com.cn/API/IDCIDs/Brand
+2017-06-07 15:01:53,497  INFO FetchDataService:610 - 1/1 records has been fetched
+2017-06-07 15:01:53,497  INFO FetchDataService:613 - 4 records are fetched actually
+2017-06-07 15:01:53,497  INFO FetchDataService:406 - Fetch brand data succeed
+2017-06-07 15:01:53,497  INFO FetchDataService:408 - Fetch Certification data starts
+2017-06-07 15:01:53,548  INFO FetchDataService:599 - Overall 20877 records are going to be fetched from https://www.dic.mercedes-benz.com.cn/API/IDCIDs/Certification
+2017-06-07 15:01:54,137  INFO FetchDataService:610 - 1/7 records has been fetched
+2017-06-07 15:01:54,815  INFO FetchDataService:610 - 2/7 records has been fetched
+2017-06-07 15:01:55,310  INFO FetchDataService:610 - 3/7 records has been fetched
+2017-06-07 15:01:55,836  INFO FetchDataService:610 - 4/7 records has been fetched
+2017-06-07 15:01:56,418  INFO FetchDataService:610 - 5/7 records has been fetched
+2017-06-07 15:01:57,263  INFO FetchDataService:610 - 6/7 records has been fetched
+2017-06-07 15:01:57,810  INFO FetchDataService:610 - 7/7 records has been fetched
+2017-06-07 15:01:57,810  INFO FetchDataService:613 - 20877 records are fetched actually
+2017-06-07 15:01:57,810  INFO FetchDataService:414 - Fetch certification data succeed
+2017-06-07 15:01:57,810  INFO FetchDataService:416 - Fetch city data started
+2017-06-07 15:01:57,855  INFO FetchDataService:599 - Overall 421 records are going to be fetched from https://www.dic.mercedes-benz.com.cn/API/IDCIDs/City
+2017-06-07 15:01:57,981  INFO FetchDataService:610 - 1/1 records has been fetched
+2017-06-07 15:01:57,981  INFO FetchDataService:613 - 421 records are fetched actually
+2017-06-07 15:01:57,981  INFO FetchDataService:422 - Fetch city data succeed
+2017-06-07 15:01:57,981  INFO FetchDataService:424 - Fetch CMS_Account starts
+2017-06-07 15:01:58,045  INFO FetchDataService:599 - Overall 102180 records are going to be fetched from https://www.dic.mercedes-benz.com.cn/API/IDCIDs/CMSAcount
+2017-06-07 15:02:00,716  INFO FetchDataService:610 - 1/35 records has been fetched
+2017-06-07 15:02:04,185  INFO FetchDataService:610 - 2/35 records has been fetched
+2017-06-07 15:02:07,279  INFO FetchDataService:610 - 3/35 records has been fetched
+2017-06-07 15:02:09,524  INFO FetchDataService:610 - 4/35 records has been fetched
+2017-06-07 15:02:11,873  INFO FetchDataService:610 - 5/35 records has been fetched
+2017-06-07 15:02:14,795  INFO FetchDataService:610 - 6/35 records has been fetched
+2017-06-07 15:02:17,137  INFO FetchDataService:610 - 7/35 records has been fetched
+2017-06-07 15:02:19,938  INFO FetchDataService:610 - 8/35 records has been fetched
+2017-06-07 15:02:22,481  INFO FetchDataService:610 - 9/35 records has been fetched
+2017-06-07 15:02:25,733  INFO FetchDataService:610 - 10/35 records has been fetched
+2017-06-07 15:02:29,516  INFO FetchDataService:610 - 11/35 records has been fetched
+2017-06-07 15:02:32,279  INFO FetchDataService:610 - 12/35 records has been fetched
+2017-06-07 15:02:34,539  INFO FetchDataService:610 - 13/35 records has been fetched
+2017-06-07 15:02:36,919  INFO FetchDataService:610 - 14/35 records has been fetched
+2017-06-07 15:02:39,403  INFO FetchDataService:610 - 15/35 records has been fetched
+2017-06-07 15:02:42,935  INFO FetchDataService:610 - 16/35 records has been fetched
+2017-06-07 15:02:45,873  INFO FetchDataService:610 - 17/35 records has been fetched
+2017-06-07 15:02:48,497  INFO FetchDataService:610 - 18/35 records has been fetched
+2017-06-07 15:02:50,846  INFO FetchDataService:610 - 19/35 records has been fetched
+2017-06-07 15:02:54,090  INFO FetchDataService:610 - 20/35 records has been fetched
+2017-06-07 15:02:57,017  INFO FetchDataService:610 - 21/35 records has been fetched
+2017-06-07 15:02:59,717  INFO FetchDataService:610 - 22/35 records has been fetched
+2017-06-07 15:03:02,607  INFO FetchDataService:610 - 23/35 records has been fetched
+2017-06-07 15:03:04,966  INFO FetchDataService:610 - 24/35 records has been fetched
+2017-06-07 15:03:07,887  INFO FetchDataService:610 - 25/35 records has been fetched
+2017-06-07 15:03:10,122  INFO FetchDataService:610 - 26/35 records has been fetched
+2017-06-07 15:03:12,497  INFO FetchDataService:610 - 27/35 records has been fetched
+2017-06-07 15:03:14,872  INFO FetchDataService:610 - 28/35 records has been fetched
+2017-06-07 15:03:17,997  INFO FetchDataService:610 - 29/35 records has been fetched
+2017-06-07 15:03:20,345  INFO FetchDataService:610 - 30/35 records has been fetched
+2017-06-07 15:03:23,233  INFO FetchDataService:610 - 31/35 records has been fetched
+2017-06-07 15:03:26,546  INFO FetchDataService:610 - 32/35 records has been fetched
+2017-06-07 15:03:29,590  INFO FetchDataService:610 - 33/35 records has been fetched
+2017-06-07 15:03:32,591  INFO FetchDataService:610 - 34/35 records has been fetched
+2017-06-07 15:03:32,845  INFO FetchDataService:610 - 35/35 records has been fetched
+2017-06-07 15:03:32,845  INFO FetchDataService:613 - 102180 records are fetched actually
+2017-06-07 15:03:32,845  INFO FetchDataService:430 - Fetch CMS_Account data succeed
+2017-06-07 15:03:32,846  INFO FetchDataService:432 - Fetch company data started
+2017-06-07 15:03:32,872  INFO FetchDataService:599 - Overall 487 records are going to be fetched from https://www.dic.mercedes-benz.com.cn/API/IDCIDs/Company
+2017-06-07 15:03:33,075  INFO FetchDataService:610 - 1/1 records has been fetched
+2017-06-07 15:03:33,075  INFO FetchDataService:613 - 487 records are fetched actually
+2017-06-07 15:03:33,075  INFO FetchDataService:438 - Fetch company data succeed
+2017-06-07 15:03:33,075  INFO FetchDataService:440 - Fetch dealer data started
+2017-06-07 15:03:33,106  INFO FetchDataService:599 - Overall 621 records are going to be fetched from https://www.dic.mercedes-benz.com.cn/API/IDCIDs/Dealer
+2017-06-07 15:03:34,638  INFO FetchDataService:610 - 1/1 records has been fetched
+2017-06-07 15:03:34,638  INFO FetchDataService:613 - 621 records are fetched actually
+2017-06-07 15:03:34,638  INFO FetchDataService:446 - Fetch dealer data succeed
+2017-06-07 15:03:34,638  INFO FetchDataService:448 - Fetch DealerAccount data started
+2017-06-07 15:03:34,686  INFO FetchDataService:599 - Overall 101789 records are going to be fetched from https://www.dic.mercedes-benz.com.cn/API/IDCIDs/DealerAccount
+2017-06-07 15:03:36,328  INFO FetchDataService:610 - 1/34 records has been fetched
+2017-06-07 15:03:37,686  INFO FetchDataService:610 - 2/34 records has been fetched
+2017-06-07 15:03:39,482  INFO FetchDataService:610 - 3/34 records has been fetched
+2017-06-07 15:03:41,075  INFO FetchDataService:610 - 4/34 records has been fetched
+2017-06-07 15:03:42,854  INFO FetchDataService:610 - 5/34 records has been fetched
+2017-06-07 15:03:44,701  INFO FetchDataService:610 - 6/34 records has been fetched
+2017-06-07 15:03:46,216  INFO FetchDataService:610 - 7/34 records has been fetched
+2017-06-07 15:03:47,903  INFO FetchDataService:610 - 8/34 records has been fetched
+2017-06-07 15:03:49,451  INFO FetchDataService:610 - 9/34 records has been fetched
+2017-06-07 15:03:50,981  INFO FetchDataService:610 - 10/34 records has been fetched
+2017-06-07 15:03:52,590  INFO FetchDataService:610 - 11/34 records has been fetched
+2017-06-07 15:03:54,377  INFO FetchDataService:610 - 12/34 records has been fetched
+2017-06-07 15:03:56,015  INFO FetchDataService:610 - 13/34 records has been fetched
+2017-06-07 15:03:57,529  INFO FetchDataService:610 - 14/34 records has been fetched
+2017-06-07 15:03:59,327  INFO FetchDataService:610 - 15/34 records has been fetched
+2017-06-07 15:04:00,993  INFO FetchDataService:610 - 16/34 records has been fetched
+2017-06-07 15:04:02,621  INFO FetchDataService:610 - 17/34 records has been fetched
+2017-06-07 15:04:04,060  INFO FetchDataService:610 - 18/34 records has been fetched
+2017-06-07 15:04:05,327  INFO FetchDataService:610 - 19/34 records has been fetched
+2017-06-07 15:04:07,035  INFO FetchDataService:610 - 20/34 records has been fetched
+2017-06-07 15:04:08,622  INFO FetchDataService:610 - 21/34 records has been fetched
+2017-06-07 15:04:10,138  INFO FetchDataService:610 - 22/34 records has been fetched
+2017-06-07 15:04:11,997  INFO FetchDataService:610 - 23/34 records has been fetched
+2017-06-07 15:04:13,966  INFO FetchDataService:610 - 24/34 records has been fetched
+2017-06-07 15:04:15,548  INFO FetchDataService:610 - 25/34 records has been fetched
+2017-06-07 15:04:17,170  INFO FetchDataService:610 - 26/34 records has been fetched
+2017-06-07 15:04:18,918  INFO FetchDataService:610 - 27/34 records has been fetched
+2017-06-07 15:04:20,811  INFO FetchDataService:610 - 28/34 records has been fetched
+2017-06-07 15:04:22,481  INFO FetchDataService:610 - 29/34 records has been fetched
+2017-06-07 15:04:24,591  INFO FetchDataService:610 - 30/34 records has been fetched
+2017-06-07 15:04:25,950  INFO FetchDataService:610 - 31/34 records has been fetched
+2017-06-07 15:04:27,296  INFO FetchDataService:610 - 32/34 records has been fetched
+2017-06-07 15:04:29,481  INFO FetchDataService:610 - 33/34 records has been fetched
+2017-06-07 15:04:31,167  INFO FetchDataService:610 - 34/34 records has been fetched
+2017-06-07 15:04:31,168  INFO FetchDataService:613 - 101789 records are fetched actually
+2017-06-07 15:04:31,168  INFO FetchDataService:454 - Fetch DealerAccount data succeed
+2017-06-07 15:04:31,168  INFO FetchDataService:456 - Fetch DealerFormat data started
+2017-06-07 15:04:31,187  INFO FetchDataService:599 - Overall 3 records are going to be fetched from https://www.dic.mercedes-benz.com.cn/API/IDCIDs/DealerFormat
+2017-06-07 15:04:31,218  INFO FetchDataService:610 - 1/1 records has been fetched
+2017-06-07 15:04:31,218  INFO FetchDataService:613 - 3 records are fetched actually
+2017-06-07 15:04:31,218  INFO FetchDataService:462 - Fetch DealerFormat data succeed
+2017-06-07 15:04:31,218  INFO FetchDataService:464 - Fetch DealerFormat data started
+2017-06-07 15:04:31,265  INFO FetchDataService:599 - Overall 14 records are going to be fetched from https://www.dic.mercedes-benz.com.cn/API/IDCIDs/DealerFormatCode
+2017-06-07 15:04:31,312  INFO FetchDataService:610 - 1/1 records has been fetched
+2017-06-07 15:04:31,312  INFO FetchDataService:613 - 14 records are fetched actually
+2017-06-07 15:04:31,312  INFO FetchDataService:470 - Fetch DealerFormat data succeed
+2017-06-07 15:04:31,312  INFO FetchDataService:472 - Fetch DealerGroup data started
+2017-06-07 15:04:31,357  INFO FetchDataService:599 - Overall 38 records are going to be fetched from https://www.dic.mercedes-benz.com.cn/API/IDCIDs/DealerGroup
+2017-06-07 15:04:31,404  INFO FetchDataService:610 - 1/1 records has been fetched
+2017-06-07 15:04:31,404  INFO FetchDataService:613 - 38 records are fetched actually
+2017-06-07 15:04:31,404  INFO FetchDataService:478 - Fetch DealerGroup data succeed
+2017-06-07 15:04:31,404  INFO FetchDataService:480 - Fetch DealerOwner data started
+2017-06-07 15:04:31,466  INFO FetchDataService:599 - Overall 7 records are going to be fetched from https://www.dic.mercedes-benz.com.cn/API/IDCIDs/DealerOwner
+2017-06-07 15:04:31,497  INFO FetchDataService:610 - 1/1 records has been fetched
+2017-06-07 15:04:31,513  INFO FetchDataService:613 - 7 records are fetched actually
+2017-06-07 15:04:31,513  INFO FetchDataService:486 - Fetch dealerowner data succeed
+2017-06-07 15:04:31,513  INFO FetchDataService:488 - Fetch dimissionReason data started
+2017-06-07 15:04:31,546  INFO FetchDataService:599 - Overall 44 records are going to be fetched from https://www.dic.mercedes-benz.com.cn/API/IDCIDs/DimissionReason
+2017-06-07 15:04:31,575  INFO FetchDataService:610 - 1/1 records has been fetched
+2017-06-07 15:04:31,575  INFO FetchDataService:613 - 44 records are fetched actually
+2017-06-07 15:04:31,575  INFO FetchDataService:494 - Fetch dimissionReason data succeed
+2017-06-07 15:04:31,575  INFO FetchDataService:496 - Fetch Ochart data started
+2017-06-07 15:04:31,622  INFO FetchDataService:599 - Overall 68952 records are going to be fetched from https://www.dic.mercedes-benz.com.cn/API/IDCIDs/OChart
+2017-06-07 15:04:32,590  INFO FetchDataService:610 - 1/23 records has been fetched
+2017-06-07 15:04:33,934  INFO FetchDataService:610 - 2/23 records has been fetched
+2017-06-07 15:04:34,887  INFO FetchDataService:610 - 3/23 records has been fetched
+2017-06-07 15:04:36,507  INFO FetchDataService:610 - 4/23 records has been fetched
+2017-06-07 15:04:37,981  INFO FetchDataService:610 - 5/23 records has been fetched
+2017-06-07 15:04:39,158  INFO FetchDataService:610 - 6/23 records has been fetched
+2017-06-07 15:04:40,497  INFO FetchDataService:610 - 7/23 records has been fetched
+2017-06-07 15:04:41,608  INFO FetchDataService:610 - 8/23 records has been fetched
+2017-06-07 15:04:43,121  INFO FetchDataService:610 - 9/23 records has been fetched
+2017-06-07 15:04:44,585  INFO FetchDataService:610 - 10/23 records has been fetched
+2017-06-07 15:04:45,592  INFO FetchDataService:610 - 11/23 records has been fetched
+2017-06-07 15:04:47,018  INFO FetchDataService:610 - 12/23 records has been fetched
+2017-06-07 15:04:48,295  INFO FetchDataService:610 - 13/23 records has been fetched
+2017-06-07 15:04:49,372  INFO FetchDataService:610 - 14/23 records has been fetched
+2017-06-07 15:04:50,497  INFO FetchDataService:610 - 15/23 records has been fetched
+2017-06-07 15:04:51,757  INFO FetchDataService:610 - 16/23 records has been fetched
+2017-06-07 15:04:53,217  INFO FetchDataService:610 - 17/23 records has been fetched
+2017-06-07 15:04:54,387  INFO FetchDataService:610 - 18/23 records has been fetched
+2017-06-07 15:04:55,559  INFO FetchDataService:610 - 19/23 records has been fetched
+2017-06-07 15:04:56,576  INFO FetchDataService:610 - 20/23 records has been fetched
+2017-06-07 15:04:57,710  INFO FetchDataService:610 - 21/23 records has been fetched
+2017-06-07 15:04:59,090  INFO FetchDataService:610 - 22/23 records has been fetched
+2017-06-07 15:05:00,654  INFO FetchDataService:610 - 23/23 records has been fetched
+2017-06-07 15:05:00,654  INFO FetchDataService:613 - 68952 records are fetched actually
+2017-06-07 15:05:00,654  INFO FetchDataService:502 - Fetch Ochart data succeed
+2017-06-07 15:05:00,654  INFO FetchDataService:504 - Fetch OchartCustom data started
+2017-06-07 15:05:00,701  INFO FetchDataService:599 - Overall 1878 records are going to be fetched from https://www.dic.mercedes-benz.com.cn/API/IDCIDs/OChartCustom
+2017-06-07 15:05:01,533  INFO FetchDataService:610 - 1/1 records has been fetched
+2017-06-07 15:05:01,533  INFO FetchDataService:613 - 1878 records are fetched actually
+2017-06-07 15:05:01,533  INFO FetchDataService:510 - Fetch OchartCustom data succeed
+2017-06-07 15:05:01,534  INFO FetchDataService:512 - Fetch province data started
+2017-06-07 15:05:01,559  INFO FetchDataService:599 - Overall 34 records are going to be fetched from https://www.dic.mercedes-benz.com.cn/API/IDCIDs/Province
+2017-06-07 15:05:01,576  INFO FetchDataService:610 - 1/1 records has been fetched
+2017-06-07 15:05:01,576  INFO FetchDataService:613 - 34 records are fetched actually
+2017-06-07 15:05:01,576  INFO FetchDataService:518 - Fetch province data succeed
+2017-06-07 15:05:01,576  INFO FetchDataService:520 - Fetch qualification data started
+2017-06-07 15:05:01,608  INFO FetchDataService:599 - Overall 6 records are going to be fetched from https://www.dic.mercedes-benz.com.cn/API/IDCIDs/Qualification
+2017-06-07 15:05:01,639  INFO FetchDataService:610 - 1/1 records has been fetched
+2017-06-07 15:05:01,639  INFO FetchDataService:613 - 6 records are fetched actually
+2017-06-07 15:05:01,639  INFO FetchDataService:526 - Fetch qualification data succeed
+2017-06-07 15:05:01,639  INFO FetchDataService:528 - Fetch staffPositionType data started
+2017-06-07 15:05:01,670  INFO FetchDataService:599 - Overall 2 records are going to be fetched from https://www.dic.mercedes-benz.com.cn/API/IDCIDs/StaffPositionType
+2017-06-07 15:05:01,701  INFO FetchDataService:610 - 1/1 records has been fetched
+2017-06-07 15:05:01,701  INFO FetchDataService:613 - 2 records are fetched actually
+2017-06-07 15:05:01,701  INFO FetchDataService:534 - Fetch staffPositionType data succeed
+2017-06-07 15:05:01,701  INFO FetchDataService:536 - Fetch staffResume data started
+2017-06-07 15:05:01,764  INFO FetchDataService:599 - Overall 177596 records are going to be fetched from https://www.dic.mercedes-benz.com.cn/API/IDCIDs/StaffResume
+2017-06-07 15:05:02,403  INFO FetchDataService:610 - 1/60 records has been fetched
+2017-06-07 15:05:03,075  INFO FetchDataService:610 - 2/60 records has been fetched
+2017-06-07 15:05:03,965  INFO FetchDataService:610 - 3/60 records has been fetched
+2017-06-07 15:05:04,733  INFO FetchDataService:610 - 4/60 records has been fetched
+2017-06-07 15:05:05,702  INFO FetchDataService:610 - 5/60 records has been fetched
+2017-06-07 15:05:06,602  INFO FetchDataService:610 - 6/60 records has been fetched
+2017-06-07 15:05:07,249  INFO FetchDataService:610 - 7/60 records has been fetched
+2017-06-07 15:05:08,217  INFO FetchDataService:610 - 8/60 records has been fetched
+2017-06-07 15:05:09,033  INFO FetchDataService:610 - 9/60 records has been fetched
+2017-06-07 15:05:09,851  INFO FetchDataService:610 - 10/60 records has been fetched
+2017-06-07 15:05:10,466  INFO FetchDataService:610 - 11/60 records has been fetched
+2017-06-07 15:05:11,059  INFO FetchDataService:610 - 12/60 records has been fetched
+2017-06-07 15:05:11,795  INFO FetchDataService:610 - 13/60 records has been fetched
+2017-06-07 15:05:12,701  INFO FetchDataService:610 - 14/60 records has been fetched
+2017-06-07 15:05:13,450  INFO FetchDataService:610 - 15/60 records has been fetched
+2017-06-07 15:05:14,233  INFO FetchDataService:610 - 16/60 records has been fetched
+2017-06-07 15:05:15,075  INFO FetchDataService:610 - 17/60 records has been fetched
+2017-06-07 15:05:16,256  INFO FetchDataService:610 - 18/60 records has been fetched
+2017-06-07 15:05:17,357  INFO FetchDataService:610 - 19/60 records has been fetched
+2017-06-07 15:05:18,311  INFO FetchDataService:610 - 20/60 records has been fetched
+2017-06-07 15:05:19,249  INFO FetchDataService:610 - 21/60 records has been fetched
+2017-06-07 15:05:20,137  INFO FetchDataService:610 - 22/60 records has been fetched
+2017-06-07 15:05:21,137  INFO FetchDataService:610 - 23/60 records has been fetched
+2017-06-07 15:05:22,123  INFO FetchDataService:610 - 24/60 records has been fetched
+2017-06-07 15:05:23,215  INFO FetchDataService:610 - 25/60 records has been fetched
+2017-06-07 15:05:24,021  INFO FetchDataService:610 - 26/60 records has been fetched
+2017-06-07 15:05:24,686  INFO FetchDataService:610 - 27/60 records has been fetched
+2017-06-07 15:05:25,685  INFO FetchDataService:610 - 28/60 records has been fetched
+2017-06-07 15:05:26,622  INFO FetchDataService:610 - 29/60 records has been fetched
+2017-06-07 15:05:27,665  INFO FetchDataService:610 - 30/60 records has been fetched
+2017-06-07 15:05:28,532  INFO FetchDataService:610 - 31/60 records has been fetched
+2017-06-07 15:05:29,521  INFO FetchDataService:610 - 32/60 records has been fetched
+2017-06-07 15:05:30,717  INFO FetchDataService:610 - 33/60 records has been fetched
+2017-06-07 15:05:34,903  INFO FetchDataService:610 - 34/60 records has been fetched
+2017-06-07 15:05:35,687  INFO FetchDataService:610 - 35/60 records has been fetched
+2017-06-07 15:05:36,356  INFO FetchDataService:610 - 36/60 records has been fetched
+2017-06-07 15:05:37,202  INFO FetchDataService:610 - 37/60 records has been fetched
+2017-06-07 15:05:38,159  INFO FetchDataService:610 - 38/60 records has been fetched
+2017-06-07 15:05:39,170  INFO FetchDataService:610 - 39/60 records has been fetched
+2017-06-07 15:05:40,122  INFO FetchDataService:610 - 40/60 records has been fetched
+2017-06-07 15:05:41,418  INFO FetchDataService:610 - 41/60 records has been fetched
+2017-06-07 15:05:42,248  INFO FetchDataService:610 - 42/60 records has been fetched
+2017-06-07 15:05:42,981  INFO FetchDataService:610 - 43/60 records has been fetched
+2017-06-07 15:05:43,780  INFO FetchDataService:610 - 44/60 records has been fetched
+2017-06-07 15:05:44,404  INFO FetchDataService:610 - 45/60 records has been fetched
+2017-06-07 15:05:45,092  INFO FetchDataService:610 - 46/60 records has been fetched
+2017-06-07 15:05:46,042  INFO FetchDataService:610 - 47/60 records has been fetched
+2017-06-07 15:05:47,226  INFO FetchDataService:610 - 48/60 records has been fetched
+2017-06-07 15:05:48,187  INFO FetchDataService:610 - 49/60 records has been fetched
+2017-06-07 15:05:49,764  INFO FetchDataService:610 - 50/60 records has been fetched
+2017-06-07 15:05:50,903  INFO FetchDataService:610 - 51/60 records has been fetched
+2017-06-07 15:05:51,622  INFO FetchDataService:610 - 52/60 records has been fetched
+2017-06-07 15:05:52,670  INFO FetchDataService:610 - 53/60 records has been fetched
+2017-06-07 15:05:53,575  INFO FetchDataService:610 - 54/60 records has been fetched
+2017-06-07 15:05:54,281  INFO FetchDataService:610 - 55/60 records has been fetched
+2017-06-07 15:05:56,091  INFO FetchDataService:610 - 56/60 records has been fetched
+2017-06-07 15:05:57,059  INFO FetchDataService:610 - 57/60 records has been fetched
+2017-06-07 15:05:57,748  INFO FetchDataService:610 - 58/60 records has been fetched
+2017-06-07 15:05:58,856  INFO FetchDataService:610 - 59/60 records has been fetched
+2017-06-07 15:05:59,108  INFO FetchDataService:610 - 60/60 records has been fetched
+2017-06-07 15:05:59,108  INFO FetchDataService:613 - 177596 records are fetched actually
+2017-06-07 15:05:59,108  INFO FetchDataService:542 - Fetch staffResume data succeed
+2017-06-07 15:05:59,108  INFO FetchDataService:544 - Fetch UserInfo data started
+2017-06-07 15:05:59,163  INFO FetchDataService:599 - Overall 91112 records are going to be fetched from https://www.dic.mercedes-benz.com.cn/API/IDCIDs/UserInfo
+2017-06-07 15:06:00,606  INFO FetchDataService:610 - 1/31 records has been fetched
+2017-06-07 15:06:02,171  INFO FetchDataService:610 - 2/31 records has been fetched
+2017-06-07 15:06:04,202  INFO FetchDataService:610 - 3/31 records has been fetched
+2017-06-07 15:06:06,233  INFO FetchDataService:610 - 4/31 records has been fetched
+2017-06-07 15:06:08,158  INFO FetchDataService:610 - 5/31 records has been fetched
+2017-06-07 15:06:10,638  INFO FetchDataService:610 - 6/31 records has been fetched
+2017-06-07 15:06:11,997  INFO FetchDataService:610 - 7/31 records has been fetched
+2017-06-07 15:06:13,264  INFO FetchDataService:610 - 8/31 records has been fetched
+2017-06-07 15:06:15,009  INFO FetchDataService:610 - 9/31 records has been fetched
+2017-06-07 15:06:16,621  INFO FetchDataService:610 - 10/31 records has been fetched
+2017-06-07 15:06:18,482  INFO FetchDataService:610 - 11/31 records has been fetched
+2017-06-07 15:06:19,779  INFO FetchDataService:610 - 12/31 records has been fetched
+2017-06-07 15:06:21,451  INFO FetchDataService:610 - 13/31 records has been fetched
+2017-06-07 15:06:23,264  INFO FetchDataService:610 - 14/31 records has been fetched
+2017-06-07 15:06:24,733  INFO FetchDataService:610 - 15/31 records has been fetched
+2017-06-07 15:06:26,249  INFO FetchDataService:610 - 16/31 records has been fetched
+2017-06-07 15:06:27,522  INFO FetchDataService:610 - 17/31 records has been fetched
+2017-06-07 15:06:29,357  INFO FetchDataService:610 - 18/31 records has been fetched
+2017-06-07 15:06:30,997  INFO FetchDataService:610 - 19/31 records has been fetched
+2017-06-07 15:06:32,497  INFO FetchDataService:610 - 20/31 records has been fetched
+2017-06-07 15:06:33,857  INFO FetchDataService:610 - 21/31 records has been fetched
+2017-06-07 15:06:35,516  INFO FetchDataService:610 - 22/31 records has been fetched
+2017-06-07 15:06:37,171  INFO FetchDataService:610 - 23/31 records has been fetched
+2017-06-07 15:06:38,997  INFO FetchDataService:610 - 24/31 records has been fetched
+2017-06-07 15:06:40,404  INFO FetchDataService:610 - 25/31 records has been fetched
+2017-06-07 15:06:42,316  INFO FetchDataService:610 - 26/31 records has been fetched
+2017-06-07 15:06:43,703  INFO FetchDataService:610 - 27/31 records has been fetched
+2017-06-07 15:06:45,295  INFO FetchDataService:610 - 28/31 records has been fetched
+2017-06-07 15:06:46,920  INFO FetchDataService:610 - 29/31 records has been fetched
+2017-06-07 15:06:48,497  INFO FetchDataService:610 - 30/31 records has been fetched
+2017-06-07 15:06:49,171  INFO FetchDataService:610 - 31/31 records has been fetched
+2017-06-07 15:06:49,171  INFO FetchDataService:613 - 91112 records are fetched actually
+2017-06-07 15:06:49,171  INFO FetchDataService:550 - Fetch UserInfo data succeed
+2017-06-07 15:06:49,171  INFO FetchDataService:552 - Fetch region data started
+2017-06-07 15:06:49,202  INFO FetchDataService:599 - Overall 17 records are going to be fetched from https://www.dic.mercedes-benz.com.cn/API/IDCIDs/Region
+2017-06-07 15:06:49,249  INFO FetchDataService:610 - 1/1 records has been fetched
+2017-06-07 15:06:49,265  INFO FetchDataService:613 - 17 records are fetched actually
+2017-06-07 15:06:49,265  INFO FetchDataService:558 - Fetch region data succeed
+2017-06-07 15:06:49,265  INFO FetchDataService:560 - Fetch RegionProvince data started
+2017-06-07 15:06:49,312  INFO FetchDataService:599 - Overall 170 records are going to be fetched from https://www.dic.mercedes-benz.com.cn/API/IDCIDs/RelationRegionProvince
+2017-06-07 15:06:49,372  INFO FetchDataService:610 - 1/1 records has been fetched
+2017-06-07 15:06:49,372  INFO FetchDataService:613 - 170 records are fetched actually
+2017-06-07 15:06:49,372  INFO FetchDataService:566 - Fetch RegionProvince data succeed
+2017-06-07 15:06:49,638  INFO DruidDataSource:667 - {dataSource-1} inited
+2017-06-07 15:06:49,795  INFO FetchDataService:46 - Insert brand data into DB started:4 records are going to insert
+2017-06-07 15:06:49,872  INFO FetchDataService:59 - Insert certification data into db:20877 records are goiong to insert
+2017-06-07 15:06:49,887  INFO FetchDataService:91 - Insert city data into DB:421 records are going to insert
+2017-06-07 15:06:55,872  INFO FetchDataService:104 - Insert CMS_Account into DB:102180 records are going to insert
+2017-06-07 15:06:55,965  INFO FetchDataService:136 - Insert company data into DB:487 records are going to insert
+2017-06-07 15:06:57,311  INFO FetchDataService:149 - Insert dealer data into DB:621 records are going to insert
+2017-06-07 15:07:07,450  INFO FetchDataService:164 - Insert DealerAccount data into DB:101789 records are going to insert
+2017-06-07 15:07:07,481  INFO FetchDataService:187 - Insert DealerFormat data into DB:3 records are going to insert
+2017-06-07 15:07:07,623  INFO FetchDataService:200 - Insert DealerFormat data into DB:14 records are going to insert
+2017-06-07 15:07:07,982  INFO FetchDataService:213 - Insert DealerGroup data into DB:38 records are going to insert
+2017-06-07 15:07:08,419  INFO FetchDataService:226 - Insert dealerowner data into DB:7 records are going to insert
+2017-06-07 15:07:08,481  INFO FetchDataService:239 - Insert dimissionReason data into DB:44 records are going to insert
+2017-06-07 15:07:19,638  INFO FetchDataService:254 - Insert Ochart data into DB:68952 records are going to insert
+2017-06-07 15:07:19,672  INFO FetchDataService:277 - Insert OchartCUstom data into DB:1878 records are going to insert
+2017-06-07 15:07:23,466  INFO FetchDataService:290 - Insert province data into DB:34 records are going to insert
+2017-06-07 15:07:23,482  INFO FetchDataService:303 - Insert qualification data into DB:6 records are going to insert
+2017-06-07 15:07:23,497  INFO FetchDataService:316 - Insert staffPositionType data into DB:2 records are going to insert
+2017-06-07 15:07:23,764  INFO FetchDataService:331 - Insert staffResume data into DB:177596 records are going to insert
+2017-06-07 15:07:35,734  INFO FetchDataService:356 - Insert UserInfo data into DB:91112 records are going to insert
+2017-06-07 15:07:35,750  INFO FetchDataService:379 - Insert region data into DB:17 records are going to insert
+2017-06-07 15:07:35,781  INFO FetchDataService:392 - Insert RegionProvince data into DB:170 records are going to inesrt
+2017-06-07 15:07:35,982  INFO ScheduleTasks:30 - Scheduled Tasks are finished
