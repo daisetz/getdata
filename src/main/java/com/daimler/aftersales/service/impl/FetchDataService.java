@@ -692,7 +692,7 @@ public class FetchDataService implements IFetchDataService {
             requestEntity.add("Page", String.valueOf(i));
             requestEntity.add("PageSize", String.valueOf(STEP_SIZE));
             String base64 = restTemplate.postForObject(url, requestEntity, String.class);
-            String json = DecodeUtil.decode(base64, loginInfo.getKey());
+            String json = DecodeUtil.decode(base64);
             Map<String, List<Object>> resultMap = JsonUtil.getMapFromJson(json);
             list.addAll(GenerateListFromMapUtil.generateList(resultMap.get("Key"), resultMap.get("Data"), destObj));
             logger.info(i + "/" + page + " records has been fetched");
@@ -714,7 +714,7 @@ public class FetchDataService implements IFetchDataService {
         requestEntity.add("Page", "1");
         requestEntity.add("PageSize", "1");
         String base64 = restTemplate.postForObject(url, requestEntity, String.class);
-        String json = DecodeUtil.decode(base64, loginInfo.getKey());
+        String json = DecodeUtil.decode(base64);
         Map<String, List<Object>> resultMap = JsonUtil.getMapFromJson(json);
         return (int) resultMap.get("TotalCount").get(0);
     }

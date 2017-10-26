@@ -47,7 +47,8 @@ public class LoginService implements ILoginService {
         requestEntity.add("PassWord",password);
         logger.info("Connecting to server"+url);
         String base64 = restTemplate.postForObject(url,requestEntity,String.class);
-        String json = DecodeUtil.decode(base64,key);
+        logger.info("Base64:"+base64);
+        String json = DecodeUtil.decode(base64);
         Map<String,List<Object>> result = JsonUtil.getMapFromJson(json);
         loginInfo.setUsername(username);
         loginInfo.setPassword(password);

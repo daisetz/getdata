@@ -1,37 +1,35 @@
 package com.daimler.aftersales.Util;
 
-import sun.misc.BASE64Decoder;
+import org.springframework.security.crypto.codec.Utf8;
 
 import javax.crypto.Cipher;
 import javax.crypto.SecretKey;
 import javax.crypto.SecretKeyFactory;
 import javax.crypto.spec.DESKeySpec;
 import javax.crypto.spec.IvParameterSpec;
-import java.io.IOException;
-import java.security.SecureRandom;
+import java.security.GeneralSecurityException;
+import java.util.Base64;
 
 /**
  * Created by zhuyuchao on 2017/2/28.
  */
 public class DecodeUtil {
 
-    public static String decode(String data, String key) {
-        if (data == null)
-            return null;
-        BASE64Decoder decoder = new BASE64Decoder();
-        byte[] buf = new byte[0];
-        byte[] bt = new byte[0];
-        String s = null;
+    private static final byte[] key = "12345678".getBytes();
+
+    public static String decode(String data) {
         try {
-            buf = decoder.decodeBuffer(data);
-            bt = DESDecode(buf, key.getBytes());
-            s = new String(bt,"UTF-8");
-        } catch (IOException e) {
+            Cipher cipher = Cipher.getInstance("DES/CBC/PKCS5Padding");
+            cipher.init(
+                    Cipher.DECRYPT_MODE,
+                    SecretKeyFactory.getInstance("DES").generateSecret(new DESKeySpec(key)),
+                    new IvParameterSpec(key));
+            return Utf8.decode(cipher.doFinal(Base64.getDecoder().decode(data)));
+        } catch (GeneralSecurityException e) {
             e.printStackTrace();
-        } catch (Exception e) {
-            e.printStackTrace();
+            return "";
         }
-        return s;
+
     }
 
     private static byte[] DESDecode(byte[] data, byte[] key) throws Exception {
